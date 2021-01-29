@@ -1,43 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Project Name - описание">
-  <title>ProjectName — Главная</title>
+  <meta name="description" content="Ask It - Free platform for event-type organization">
+  <title>Ask.It — Live Interaction From Audience</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__inner">
-      <div class="page-header__top">
-        <nav class="main-nav">
-          <div class="logo page-header__logo">
-            <a href="/" class="logo__link" title="На главную Project Name">
-              <img src="" width="" height="" alt="Project Name">
-            </a>
+      <a class="logo page-header__logo">
+        <img src="" width="140" height="169" alt="Ask It logo">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="sr-only">Toggle menu</span>
+        </button>
+
+        <ul class="main-nav__list main-nav__list--main">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">How it works</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Features</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Partners</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Events</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">About us</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a class="user-navigation__link" href="#">Log in</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="user-navigation__link" href="#">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="start-home">
+      <div class="start-home__inner">
+        <h1 class="start-home__title">Live Interaction From Audience</h1>
+        <p class="start-home__subtitle">Q&A, Polls and Slide-sharing for Events</p>
+
+        <div class="start-home__btn-wrap">
+          <a class="btn btn--action start-home__btn" href="#">Create an event</a>
+
+          <form class="form form--join start-home__form" action="#">
+            <div class="form__group">
+              <label class="sr-only" for="join-code">Your code</label>
+              <div class="form__group-fields">
+                <input class="field field--text" type="text" name="join-code" id="join-code" placeholder="type code" required>
+              </div>
+            </div>
+
+            <button class="btn btn--action start-home__btn" type="submit">Join event</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info__inner">
+        <h2 class="info__title">How it works</h2>
+
+        <ol class="info__list">
+          <li class="info__item">
+            <p>Create a FREE account with us</p>
+          </li>
+          <li class="info__item">
+            <p>Create your own event or Q&A session</p>
+          </li>
+          <li class="info__item">
+            <p>Share your meeting code with the participants</p>
+          </li>
+          <li class="info__item">
+            <p>Run your meeting successfully</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="interaction-description">
+        <div class="interaction-description__inner">
+          <div class="interaction-description__text-wrap">
+            <p class="interaction-description__label">Interaction</p>
+
+            <p class="interaction-description__slogan">Interact with thousand of audience in no time</p>
+            <p class="interaction-description__subslogan">Its easier then ever</p>
+
+            <p class="interaction-description__text">
+              it’s never been easier to connect with people who speak this language. They want others to build up
+              their self-image and confidence, and digital connectivity creates ample opportunity to tell your audience
+              why they're awesome. Move beyond general flattery and focus on specifics. Ask yourself, "How can I make
+              my audience feel good about themselves?" <br> One option might be developing a blog series that focuses on
+              industry wins, or spotlights companies that are doing something right. Or if you share an article
+              with your network, you could point out a quote from the author that really resonates with you.
+              Don't just tell your audience you love them; tell them why.
+            </p>
           </div>
 
-          <button class="main-nav__toggle" type="button">
-            <span></span>
-          </button>
+          <div class="interaction-description__actions-wrap">
+            <ul class="interaction-description__list">
+              <li class="interaction-description__item">
+                <p>Ask a Question Right Now</p>
+              </li>
+              <li class="interaction-description__item">
+                <p>Choose From Questions</p>
+              </li>
+              <li class="interaction-description__item">
+                <p>Select From Top Questions</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Страница 1</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Страница 2</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Страница 3</a>
-            </li>
-          </ul>
-        </nav>
+    <section class="features">
+      <div class="features__inner">
+        <h2 class="features__title">Features</h2>
+
+        <ul class="features__list">
+          <li class="features__item">
+            <p>Ask a question</p>
+          </li>
+          <li class="features__item">
+            <p>Raise a poll</p>
+          </li>
+          <li class="features__item">
+            <p>View statistics</p>
+          </li>
+          <li class="features__item">
+            <p>Vote a question</p>
+          </li>
+          <li class="features__item">
+            <p>Create a survey</p>
+          </li>
+          <li class="features__item">
+            <p>Privacy ensured</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="partners__inner">
+        <h2 class="partners__title">Partners</h2>
+
+        <div class="swiper-container partners__list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide partner">
+              <img src="" alt="McCANN">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="UN Women">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="accenture">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="CISCO">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="Eventbrite">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="Zappos.com">
+            </div>
+            <div class="swiper-slide partner">
+              <img src="" alt="Siemens">
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-type">
+      <div class="event-type__inner">
+        <h2 class="event-type__title">Events</h2>
+
+        <ul class="event-type__list">
+          <li class="event-card event-type__item">
+            <div class="event-card__head">
+              <h3 class="event-card__title">
+                <span>External</span> event
+              </h3>
+            </div>
+
+            <p class="event-card__description">
+              Offers customizable on-line registration service for event organizers. Includes pricing, features,
+              and types of accounts.
+            </p>
+
+            <a class="btn event-type__btn" href="#">Discover</a>
+          </li>
+
+          <li class="event-card event-type__item">
+            <div class="event-card__head">
+              <h3 class="event-card__title">
+                <span>Interactive</span> event
+              </h3>
+            </div>
+
+            <p class="event-card__description">
+              Offers customizable on-line registration service for event organizers. Includes pricing, features,
+              and types of accounts.
+            </p>
+
+            <a class="btn event-type__btn" href="#">Discover</a>
+          </li>
+
+          <li class="event-card event-type__item">
+            <div class="event-card__head">
+              <h3 class="event-card__title">
+                <span>Internal</span> event
+              </h3>
+            </div>
+
+            <p class="event-card__description">
+              Offers customizable on-line registration service for event organizers. Includes pricing, features,
+              and types of accounts.
+            </p>
+
+            <a class="btn event-type__btn" href="#">Discover</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__inner">
+        <h2 class="about__title">About us</h2>
+
+        <p class="about__label">Know us</p>
+
+        <div class="about__inner-wrap">
+          <div class="about__text-content">
+            <p class="about__slogan">Who we are?</p>
+            <p class="about__subslogan">What we can do for you</p>
+
+            <p class="about__text">
+              it’s never been easier to connect with people who speak this language. They want others to build up
+              their self-image and confidence, and digital connectivity creates ample opportunity to tell your audience
+              why they're awesome. Move beyond general flattery and focus on specifics. Ask yourself, "How can I make
+              my audience feel good about themselves?" <br> One option might be developing a blog series that focuses on
+              industry wins, or spotlights companies that are doing something right. Or if you share an article
+              with your network, you could point out a quote from the author that really resonates with you.
+              Don't just tell your audience you love them; tell them why.
+            </p>
+          </div>
+
+          <div class="about__stats-content">
+            <ul class="stats-list about__stats-list">
+              <li class="stats-list__item">
+                <p class="stats-list__text">
+                  <span>20,145</span> audience served
+                </p>
+              </li>
+
+              <li class="stats-list__item">
+                <p class="stats-list__text">
+                  <span>5480</span> hours of service
+                </p>
+              </li>
+
+              <li class="stats-list__item">
+                <p class="stats-list__text">
+                  <span>715</span> event covered
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__about">
+        <a class="logo page-footer__logo" href="/">
+          <img src="" width="140" height="169" alt="Ask It logo">
+        </a>
+
+        <p class="page-footer__about-text">
+          We are AskVote.io. We are an online platform for operating events effectively. We're working on a web
+          application for facilitating anonymous questions and answers sessions. The application is to be used
+          mainly by corporate and government customers.
+        </p>
+      </div>
+
+      <dl class="second-nav page-footer__second-nav">
+        <div class="second-nav__wrapper">
+          <dt class="second-nav__title page-footer__title">Useful links</dt>
+          <dd>
+            <ul class="second-nav__links">
+              <li class="second-nav__item">
+                <a class="second-nav__link">Home</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">How it works</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Terms and conditions</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Cookies policy</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Contact us</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">About us</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Features</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Event list</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+
+        <div class="second-nav__wrapper">
+          <dt class="second-nav__title page-footer__title">My account</dt>
+          <dd>
+            <ul class="second-nav__links">
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">New account</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Open an account</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Manage</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Change password</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Delete account</a>
+              </li>
+
+              <li class="second-nav__item">
+                <a class="second-nav__link" href="#">Dashboard</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+
+      <div class="page-footer__social">
+        <p class="page-footer__title page-footer__title">We are social</p>
+
+        <ul class="social-links page-footer__social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">Twitter</a>
+          </li>
+
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">Pinterest</a>
+          </li>
+
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">LinkedIn</a>
+          </li>
+
+          <li class="social-links__item">
+            <a class="social-links__link" href="#">Facebook</a>
+          </li>
+        </ul>
+
+        <div class="page-footer__subscribe">
+          <p class="page-footer__subscribe-text">Subscribe to our newsletter</p>
+
+          <form class="form form--subscribe" action="#">
+            <div class="form__group">
+              <label class="sr-only" for="email">Your email</label>
+              <div class="form__group-fields">
+                <input class="field field--text" type="email" name="email" id="email" placeholder="Email address" required>
+              </div>
+            </div>
+
+            <button class="sr-only" type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="page-footer__bottom">
+          <p class="page-footer__copyright">© 2021 AskVote.io, all rights reserved</p>
+        </div>
       </div>
     </div>
-</header>
+  </footer>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
