@@ -1,1 +1,38 @@
-// variables
+// Colors
+//---------------------------------
+
+$color-black:                     #121111;
+$color-white:                     #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+$color-main:                      #037693;
+
+$color-text:                      $color-main;
+$color-text--invert:              $color-white;
+
+$color-body:                      $color-white;
+
+// Typography
+//---------------------------------
+
+$font-family:                     "Lato", "Arial", sans-serif;
+
+$font-size:                       25px;
+$font-size--title:                83px;
+
+$line-height:                     1.33;
+
+// Viewports
+//---------------------------------
+
+$viewport--sm:                    320px;
+$viewport--md:                    768px;
+$viewport--lg:                    1024px;
+$viewport--xl:                    1440px;
+$viewport--xxl:                   1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                      144dpi;
+$retina-dppx:                     1.5dppx;
