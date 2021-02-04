@@ -11,9 +11,11 @@
 <body>
   <header class="page-header">
     <div class="page-header__inner">
-      <a class="logo page-header__logo">
-        <img src="" width="140" height="169" alt="Ask It logo">
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="logo page-header__logo">
+          <img src="img/content/logo.png" width="113" height="136" alt="Ask It logo">
+        </a>
+      </div>
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -25,28 +27,44 @@
             <a class="main-nav__link" href="/">Home</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">How it works</a>
+            <a class="main-nav__link" href="#howto">How it works</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Features</a>
+            <a class="main-nav__link" href="#features">Features</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Partners</a>
+            <a class="main-nav__link" href="#partners">Partners</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Events</a>
+            <a class="main-nav__link" href="#events">Events</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">About us</a>
+            <a class="main-nav__link" href="#about">About us</a>
           </li>
         </ul>
 
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item">
-            <a class="user-navigation__link" href="#">Log in</a>
+            <a class="main-nav__link main-nav__link--v-icon" href="#">
+              <span class="main-nav__icon" aria-hidden="true">
+                <svg width="25" height="27">
+                  <use xlink:href="img/sprite/sprite.svg#login"></use>
+                </svg>
+              </span>
+
+              Log in
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="user-navigation__link" href="#">Register</a>
+            <a class="main-nav__link main-nav__link--v-icon" href="#">
+              <span class="main-nav__icon" aria-hidden="true">
+                <svg width="22" height="26">
+                  <use xlink:href="img/sprite/sprite.svg#register"></use>
+                </svg>
+              </span>
+
+              Register
+            </a>
           </li>
         </ul>
       </nav>
@@ -76,7 +94,7 @@
       </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="howto">
       <div class="info__inner">
         <h2 class="info__title">How it works</h2>
 
@@ -132,7 +150,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="features__inner">
         <h2 class="features__title">Features</h2>
 
@@ -159,7 +177,7 @@
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="partners__inner">
         <h2 class="partners__title">Partners</h2>
 
@@ -194,7 +212,7 @@
       </div>
     </section>
 
-    <section class="event-type">
+    <section class="event-type" id="events">
       <div class="event-type__inner">
         <h2 class="event-type__title">Events</h2>
 
@@ -247,7 +265,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__inner">
         <h2 class="about__title">About us</h2>
 

@@ -1,0 +1,28 @@
+.page-header {
+  flex-shrink: 0;
+  min-height: 160px;
+  background-color: $color-black;
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  flex: 0 0 288px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 58px;
+  margin-left: 18px;
+}
+
+.page-header__logo {
+  transform: translateY(-4px);
+}
