@@ -71,10 +71,10 @@ const optimizeSvg = () => {
 }
 
 const buildSvgSprite = () => {
-  return gulp.src(`${paths.src.images.sprite}*.svg`)
+  return gulp.src(`${paths.src.images.spriteSvg}*.svg`)
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest(paths.dest.images.all));
+    .pipe(gulp.dest(paths.dest.images.sprite));
 };
 
 const optimizeImages = () => {
@@ -93,7 +93,7 @@ const createWebp = () => {
 };
 
 const copyImages = () => {
-  return gulp.src(`${paths.src.images.all}**/*.{jpg,jpeg,png,webp,gif,svg}`, {base: paths.src.root})
+  return gulp.src([`${paths.src.images.all}**/*.{jpg,jpeg,png,webp,gif,svg}`, `!${paths.src.images.spriteSvg}*.svg`], {base: paths.src.root})
     .pipe(changed(paths.dest.images.all))
     .pipe(gulp.dest(paths.dest.root));
 };

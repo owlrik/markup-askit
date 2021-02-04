@@ -14,8 +14,8 @@ module.exports = {
       scripts: dirs.src + 'js/',
       images: {
         all: dirs.src + 'img/',
-        sprite: dirs.src + 'sprite/',
-        spriteSvg: dirs.src + 'sprite/svg/'
+        sprite: dirs.src + 'img/sprite/',
+        spriteSvg: dirs.src + 'img/sprite/svg/'
       },
       fonts: dirs.src + 'fonts/'
     },
@@ -25,8 +25,8 @@ module.exports = {
       scripts: dirs.dest + 'js/',
       images: {
         all: dirs.dest + 'img/',
-        sprite: dirs.src + 'sprite/',
-        spriteSvg: dirs.src + 'sprite/svg/'
+        sprite: dirs.src + 'img/sprite/',
+        spriteSvg: dirs.src + 'img/sprite/svg/'
       },
       fonts: dirs.dest + 'fonts/'
     }
