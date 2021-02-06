@@ -1,4 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="login" viewBox="0 0 32 32"><title/><g id="Fill"><path d="M25,2H16V4h9a1,1,0,0,1,1,1V27a1,1,0,0,1-1,1H16v2h9a3,3,0,0,0,3-3V5A3,3,0,0,0,25,2Z"/><path d="M16,22.4l5-5a2,2,0,0,0,0-2.82l-5-5L14.55,11l4,4H4v2H18.59l-4,4Z"/></g></symbol><symbol id="register" viewBox="0 0 1000 1000">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs><symbol id="login" viewBox="0 0 32 32"><title/><g id="Fill"><path d="M25,2H16V4h9a1,1,0,0,1,1,1V27a1,1,0,0,1-1,1H16v2h9a3,3,0,0,0,3-3V5A3,3,0,0,0,25,2Z"/><path d="M16,22.4l5-5a2,2,0,0,0,0-2.82l-5-5L14.55,11l4,4H4v2H18.59l-4,4Z"/></g></symbol><symbol id="register" viewBox="0 0 1000 1000">
 <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
 <g><path d="M108.1,949.3c-0.6,27.1-23,48.5-50.1,48c-27.1-0.6-48.5-23-48-50.1c5.4-255.2,259.2-418.6,490-418.6c236.2,0,484.6,163.4,490,418.6c0.5,27.1-21,49.5-48,50.1c-27.1,0.5-49.5-21-50.1-48C887.7,750.1,685.2,626.7,500,626.7C314,626.7,112.1,756.4,108.1,949.3"/><path d="M500,493c108.2,0,196.2-88,196.2-196.2c0-108.1-88-196.2-196.2-196.2c-108.1,0-196.1,88-196.1,196.2C303.9,405,391.8,493,500,493 M500,591.1c-162.5,0-294.2-131.7-294.2-294.2C205.8,134.4,337.5,2.7,500,2.7c162.5,0,294.3,131.7,294.3,294.2C794.2,459.4,662.5,591.1,500,591.1L500,591.1L500,591.1z"/></g>
+</symbol><symbol id="title-dash--long" viewBox="0 0 332.778 8">
+  
+  <path id="Rounded_Rectangle_4_copy" data-name="Rounded Rectangle 4 copy" class="cls-1" d="M864.8,542.382H876a4,4,0,1,1,0,8H864.8A4,4,0,1,1,864.8,542.382Zm-32,0h1.6a4,4,0,1,1,0,8h-1.6A4,4,0,1,1,832.8,542.382Zm62.4,0h262.4a4,4,0,1,1,0,8H895.2A4,4,0,1,1,895.2,542.382Z" transform="translate(-828.812 -542.375)"/>
 </symbol></svg>

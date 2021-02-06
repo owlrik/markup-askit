@@ -1,0 +1,25 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 9px 28px;
+  font-size: 27px;
+  line-height: 1.2;
+  font-family: $font-family;
+  color: $color-text--invert;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  background-color: $color-main;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+
+  &--action {
+    background-color: transparent;
+    border: 1px solid $color-white;
+    border-radius: 0;
+  }
+}

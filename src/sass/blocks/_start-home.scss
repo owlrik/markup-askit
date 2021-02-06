@@ -1,0 +1,74 @@
+.start-home {
+  color: $color-text--invert;
+  background-color: #163155;
+  background-image:
+    url("../img/bg/iphone-6.png"),
+    url("../img/bg/intro-1.jpg");
+  background-position:
+    calc(50% + 500px) calc(100% + 195px),
+    center top;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+}
+
+.start-home__inner {
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 284px 30px 285px;
+}
+
+.start-home__left {
+  max-width: 1088px;
+  padding-right: 46px;
+  text-align: center;
+}
+
+.start-home__left .field {
+  max-width: 146px;
+  text-align: center;
+}
+
+.start-home__title {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 40px;
+  font-size: 66px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: url("../img/bg/title-dash--long.svg") right center no-repeat;
+  }
+}
+
+.start-home__subtitle {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.start-home__btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.start-home__form {
+  display: flex;
+  margin-left: 55px;
+}
+
+.start-home__form .form__group {
+  order: 1;
+}
+
+.start-home__form .start-home__btn {
+  padding-right: 16px;
+  padding-left: 10px;
+}

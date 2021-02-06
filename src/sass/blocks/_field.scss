@@ -1,0 +1,19 @@
+.field {
+  width: 100%;
+  padding: 9px 25px;
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: $font-family;
+  color: $color-main;
+  background-color: $color-white;
+  border: none;
+  border-radius: 0;
+
+  &::placeholder {
+    color: $color-main;
+  }
+
+  &--text {
+    height: 60px;
+  }
+}
