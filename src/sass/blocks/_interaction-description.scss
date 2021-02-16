@@ -1,0 +1,230 @@
+.interaction-description {
+  color: $color-text--invert;
+  background-color: $color-main;
+}
+
+.interaction-description__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.interaction-description__left {
+  position: relative;
+  //width: 54%;
+  max-width: 870px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 180px;
+}
+
+.interaction-description__label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 16px 13px 116px;
+  font-weight: 300;
+  font-size: 33px;
+  letter-spacing: 5px;
+  border: 1px solid $color-white;
+  transform: translateX(-100%) rotate(-90deg);
+  transform-origin: right top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: $color-white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: block;
+    width: 94px;
+    height: 2px;
+    background-color: $color-white;
+    transform: translateY(-50%);
+  }
+}
+
+.interaction-description__label svg {
+  fill: $color-white;
+}
+
+.interaction-description__slogan {
+  max-width: 408px;
+  margin: 0 0 13px;
+  font-size: 67px;
+  line-height: 1.25;
+}
+
+.interaction-description__subslogan {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 55px;
+  padding-right: 264px;
+  font-size: 33px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    right: 1px;
+    display: block;
+    width: 256px;
+    height: 1px;
+    background-color: $color-white;
+  }
+}
+
+.interaction-description__text {
+  font-size: 20px;
+}
+
+.interaction-description__text p {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.interaction-description__right {
+  position: relative;
+  flex-grow: 1;
+  min-height: 720px;
+  padding-top: 148px;
+}
+
+.interaction-description__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interaction-description__item {
+  //position: relative;
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  font-size: 26px;
+  text-align: center;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    background-color: #f1b451;
+    border-radius: 6px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg/item-border.svg") center/100% no-repeat;
+  }
+
+  &--ask {
+    left: 135px;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  &--choose {
+    top: 290px;
+    left: 315px;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) scaleX(-1) rotate(45deg);
+    }
+  }
+
+  &--select {
+    top: 435px;
+    left: 135px;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) scaleY(-1) rotate(45deg);
+    }
+  }
+}
+
+.interaction-description__item--ask .interaction-description__item-content {
+  &::before {
+    background: url("../img/bg/light-bulb.svg") center/100% no-repeat;
+  }
+}
+
+.interaction-description__item--choose .interaction-description__item-content {
+  &::before {
+    background: url("../img/bg/magnifier.svg") center/100% no-repeat;
+  }
+}
+
+.interaction-description__item--select .interaction-description__item-content {
+  &::before {
+    background: url("../img/bg/list.svg") center/100% no-repeat;
+  }
+}
+
+.interaction-description__item-content {
+  position: relative;
+  padding-top: 102px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    display: block;
+    width: 87px;
+    height: 87px;
+    transform: translateX(-50%);
+  }
+}
+
+.interaction-description__item-content p {
+  max-width: 175px;
+  margin: 0 auto;
+}
