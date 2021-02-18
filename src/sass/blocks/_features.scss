@@ -1,0 +1,138 @@
+.features__inner {
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 82px 30px 92px;
+}
+
+.features__title-wrap {
+  text-align: center;
+}
+
+.features__title {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 60px;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: url("../img/bg/title-dash.svg") left center no-repeat;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1182px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+  flex: 1 1 33%;
+  max-width: 394px;
+  //min-width: 250px;
+  padding: 35px 44px 38px;
+  font-weight: 700;
+  font-size: 33px;
+  text-align: center;
+
+  &:nth-child(n + 4) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30px;
+      display: block;
+      width: calc(100% - 60px);
+      height: 2px;
+      background-color: $color-main;
+    }
+  }
+
+  &:nth-child(3n) {
+    &::after {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: block;
+    width: 2px;
+    height: calc(100% - 60px);
+    background-color: $color-main;
+  }
+}
+
+.features__item .features__item-content {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 65px;
+    height: 70px;
+    transform: translateX(-50%);
+  }
+}
+
+.features__item--ask .features__item-content {
+  &::before {
+    background: url("../img/bg/microphone.svg") center top no-repeat;
+  }
+}
+
+.features__item--poll .features__item-content {
+  &::before {
+    background: url("../img/bg/bar-chart.svg") center top no-repeat;
+  }
+}
+
+.features__item--stat .features__item-content {
+  &::before {
+    background: url("../img/bg/line-chart.svg") center top no-repeat;
+  }
+}
+
+.features__item--vote .features__item-content {
+  &::before {
+    background: url("../img/bg/medal.svg") center top no-repeat;
+  }
+}
+
+.features__item--survey .features__item-content {
+  &::before {
+    background: url("../img/bg/flag.svg") center top no-repeat;
+  }
+}
+
+.features__item--privacy .features__item-content {
+  &::before {
+    background: url("../img/bg/lock.svg") center top no-repeat;
+  }
+}
+
+.features__item-content {
+  position: relative;
+  padding-top: 75px;
+}
+
+.features__item-content p {
+  margin: 0;
+}
