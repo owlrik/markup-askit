@@ -1,0 +1,129 @@
+.about__inner {
+  position: relative;
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 106px 30px 40px;
+}
+
+.about__title-wrap {
+  text-align: center;
+}
+
+.about__title {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 78px;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: url("../img/bg/title-dash.svg") left center no-repeat;
+    transform: scaleX(-1);
+  }
+}
+
+.about__content-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__left {
+  max-width: 870px;
+  padding-left: 180px;
+}
+
+.about__label {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 16px 13px 116px;
+  font-weight: 300;
+  font-size: 33px;
+  letter-spacing: 5px;
+  border: 1px solid $color-main;
+  border-right-style: none;
+  transform: translateX(-100%) rotate(-90deg);
+  transform-origin: right top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: $color-main;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: block;
+    width: 94px;
+    height: 2px;
+    background-color: $color-main;
+    transform: translateY(-50%);
+  }
+}
+
+.about__slogan {
+  max-width: 408px;
+  margin: 0;
+  font-size: 67px;
+  line-height: 1.25;
+}
+
+.about__subslogan {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-right: 264px;
+  font-size: 33px;
+  letter-spacing: 2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    right: 1px;
+    display: block;
+    width: 256px;
+    height: 1px;
+    background-color: $color-main;
+  }
+}
+
+.about__text {
+  font-size: 20px;
+}
+
+.about__text p {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__right {
+  margin-left: 50px;
+  padding-top: 50px;
+}

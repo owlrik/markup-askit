@@ -1,0 +1,94 @@
+.stats-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 15px 40px;
+  font-size: 27px;
+  color: #2d2d2d;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    display: block;
+    height: 5px;
+  }
+
+  &--audience {
+    &::before {
+      background-color: #4ca59a;
+      box-shadow: 0 0 0 12px #a5d2cc;
+    }
+
+    &::after {
+      background-color: #4ca59a;
+    }
+  }
+
+  &--hours {
+    &::before {
+      background-color: #f26250;
+      box-shadow: 0 0 0 12px #f8b0a7;
+    }
+
+    &::after {
+      background-color: #f26250;
+    }
+  }
+
+  &--events {
+    &::before {
+      background-color: #f0a765;
+      box-shadow: 0 0 0 12px #f7d3b2;
+    }
+
+    &::after {
+      background-color: #f0a765;
+    }
+  }
+}
+
+.stats-list__item p {
+  margin: 0;
+}
+
+.stats-list__item span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 56px;
+}
+
+.stats-list__item--audience span {
+  color: #4ca59a;
+}
+
+.stats-list__item--hours span {
+  color: #f26250;
+}
+
+.stats-list__item--events span {
+  color: #f0a765;
+}
