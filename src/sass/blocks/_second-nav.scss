@@ -1,0 +1,21 @@
+.second-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 94px;
+}
+
+.second-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.second-nav__item {
+  line-height: 1;
+}
+
+.second-nav__link {
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+}
