@@ -26,44 +26,14 @@
   position: absolute;
   top: 0;
   left: 10px;
-  display: inline-block;
   margin: 0;
-  padding: 10px 16px 13px 116px;
-  font-weight: 300;
-  font-size: 33px;
-  letter-spacing: 5px;
-  border: 1px solid $color-white;
+  border-right: 0;
   transform: translateX(-100%) rotate(-90deg);
   transform-origin: right top;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    display: block;
-    width: 21px;
-    height: 21px;
-    background-color: $color-white;
-    border-radius: 50%;
-    transform: translateY(-50%);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    display: block;
-    width: 94px;
-    height: 2px;
-    background-color: $color-white;
-    transform: translateY(-50%);
-  }
 }
 
 .interaction-description__label svg {
-  fill: $color-white;
+  fill: currentColor;
 }
 
 .interaction-description__slogan {

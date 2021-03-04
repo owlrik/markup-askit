@@ -19,10 +19,16 @@
   flex: 0 0 288px;
   justify-content: center;
   align-items: center;
+  height: 167px;
   margin-right: 58px;
   margin-left: 18px;
 }
 
 .page-header__logo {
   transform: translateY(-4px);
+}
+
+.page-header__logo img {
+  width: 113px;
+  height: 136px;
 }

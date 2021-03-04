@@ -35,17 +35,15 @@
   display: inline-block;
   margin: 0 auto 40px;
   font-size: 66px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 0;
-    display: block;
-    width: 100%;
-    height: 8px;
-    background: url("../img/bg/title-dash--long.svg") right center no-repeat;
-  }
+.start-home__title svg {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 333px;
+  height: 8px;
+  fill: currentColor;
 }
 
 .start-home__subtitle {

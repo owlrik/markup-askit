@@ -16,17 +16,15 @@
   font-weight: 300;
   font-size: 66px;
   letter-spacing: 5px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 5px;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: url("../img/bg/title-dash.svg") left center no-repeat;
-  }
+.info__title svg {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  width: 102px;
+  height: 5px;
+  fill: currentColor;
 }
 
 .info__list {
