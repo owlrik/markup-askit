@@ -1,0 +1,17 @@
+.partners-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 80px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.partners-slider .slider-controls__btn--prev {
+  left: 60px;
+}
+
+.partners-slider .slider-controls__btn--next {
+  right: 60px;
+}

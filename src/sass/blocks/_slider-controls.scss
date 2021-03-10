@@ -1,0 +1,14 @@
+.slider-controls__btn {
+  width: 32px;
+  height: 50px;
+  padding: 2px 5px;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  &--flip {
+    transform: rotate(180deg);
+  }
+}

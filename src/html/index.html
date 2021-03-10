@@ -236,33 +236,48 @@
           </h2>
         </div>
 
-        <div class="swiper-container partners__list">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-mccann.png" alt="McCANN">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-un-women.png" alt="UN Women">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-accenture.png" alt="accenture">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-cisco.png" alt="CISCO">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-eventbrite.png" alt="Eventbrite">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-zappos.png" alt="Zappos.com">
-            </div>
-            <div class="swiper-slide partner">
-              <img src="img/slides/logo-siemens.png" alt="Siemens">
-            </div>
+        <div class="partners-slider slider partners__slider">
+          <div class="slider-controls slider__controls">
+            <button class="slider-controls__btn slider-controls__btn--prev slider-controls__btn--flip btn-image swiper-button-prev">
+              <span class="sr-only">Предыдущие логотипы</span>
+              <svg width="22" height="45">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+
+            <button class="slider-controls__btn slider-controls__btn--next btn-image swiper-button-next">
+              <span class="sr-only">Следующие логотипы</span>
+              <svg width="22" height="45">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
           </div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="slider__container swiper-container">
+            <ul class="slider__wrapper swiper-wrapper">
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-mccann.png" alt="McCANN">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-un-women.png" alt="UN Women">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-accenture.png" alt="accenture">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-cisco.png" alt="CISCO">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-eventbrite.png" alt="Eventbrite">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-zappos.png" alt="Zappos.com">
+              </li>
+              <li class="partners-slider__item slider__slide swiper-slide">
+                <img src="img/slides/logo-siemens.png" alt="Siemens">
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

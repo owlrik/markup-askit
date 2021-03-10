@@ -42,7 +42,9 @@ const buildPages = () => {
 const buildStyles = () => {
   return gulp.src(`${paths.src.styles}style.scss`, {sourcemaps: true})
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: ['node_modules']
+    }))
     .pipe(postcss([
       autoprefixer({
         grid: 'no-autoplace'

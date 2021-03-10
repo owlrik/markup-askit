@@ -1,0 +1,39 @@
+.partners {
+  color: $color-text--invert;
+  background: #5b5a5a url("../img/bg/bg-partners.jpg") center top no-repeat;
+}
+
+.partners__inner {
+  padding-top: 5px;
+  padding-bottom: 55px;
+}
+
+.partners__title-wrap {
+  text-align: center;
+}
+
+.partners__title {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 60px;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 5px;
+}
+
+.partners__title svg {
+  position: absolute;
+  top: 100%;
+  right: 5px;
+  width: 102px;
+  height: 5px;
+  fill: currentColor;
+  transform: scaleX(-1);
+}
+
+.partners__slider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-right: 140px;
+  padding-left: 140px;
+}
