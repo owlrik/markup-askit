@@ -9,3 +9,7 @@
 .hidden {
   display: none !important; // stylelint-disable-line
 }
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -3,6 +3,20 @@
   max-width: 1630px;
   margin: 0 auto;
   padding: 106px 30px 140px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 1240px;
+    padding: 24px 20px 25px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 50px;
+    padding-bottom: 38px;
+  }
 }
 
 .info__title-wrap {
@@ -16,6 +30,20 @@
   font-weight: 300;
   font-size: 66px;
   letter-spacing: 5px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-bottom: 46px;
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
 }
 
 .info__title svg {
@@ -25,6 +53,12 @@
   width: 102px;
   height: 5px;
   fill: currentColor;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    left: 2px;
+    width: 68px;
+    height: 3px;
+  }
 }
 
 .info__list {
@@ -33,18 +67,77 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .info__item {
   position: relative;
-  flex-grow: 1;
-  max-width: 320px;
+  flex: 1 1 320px;
   margin-right: 30px;
   padding-top: 178px;
   text-align: center;
 
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 120px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    max-width: 230px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    padding-top: 135px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    flex-basis: auto;
+    padding-top: 115px;
+  }
+
+  &:nth-child(odd) {
+    @media screen and (max-width: $screen--md - 1) {
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: $screen--sm - 1) {
+      margin-right: 0;
+    }
+  }
+
   &:last-child {
     margin-right: 0;
+
+    @media screen and (max-width: $screen--xs - 1) {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
@@ -60,6 +153,16 @@
     background-repeat: no-repeat;
     border: 1px solid $color-main;
     transform: translateX(-50%);
+
+    @media screen and (max-width: $screen--xxl - 1) {
+      width: 86px;
+      height: 86px;
+    }
+
+    @media screen and (max-width: $screen--md - 1) {
+      width: 96px;
+      height: 96px;
+    }
   }
 
   &--account {
@@ -67,6 +170,10 @@
       background-color: $color-main;
       background-size: 74px auto;
       background-image: url("../img/bg/create-account.svg");
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        background-size: 48px, auto;
+      }
     }
   }
 
@@ -74,6 +181,10 @@
     &::before {
       background-size: 82px auto;
       background-image: url("../img/bg/faq.svg");
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        background-size: 55px, auto;
+      }
     }
   }
 
@@ -81,6 +192,10 @@
     &::before {
       background-size: 74px auto;
       background-image: url("../img/bg/qr-code.svg");
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        background-size: 65px, auto;
+      }
     }
   }
 
@@ -88,6 +203,10 @@
     &::before {
       background-size: 98px auto;
       background-image: url("../img/bg/favorite.svg");
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        background-size: 65px, auto;
+      }
     }
   }
 }
@@ -95,4 +214,16 @@
 .info__item p {
   margin: 0;
   font-size: 29px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    font-size: 21px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 18px;
+  }
 }

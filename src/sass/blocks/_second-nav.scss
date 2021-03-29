@@ -2,6 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 94px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 120px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    display: none;
+  }
 }
 
 .second-nav__list {
@@ -12,10 +22,18 @@
 
 .second-nav__item {
   line-height: 1;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    line-height: 1.2;
+  }
 }
 
 .second-nav__link {
   font-weight: 300;
   font-size: 18px;
   text-decoration: none;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 39px;
+  }
 }

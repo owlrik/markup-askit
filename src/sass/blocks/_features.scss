@@ -3,6 +3,22 @@
   max-width: 1630px;
   margin: 0 auto;
   padding: 82px 30px 92px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 1240px;
+    padding-top: 110px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 30px;
+    padding-bottom: 72px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-bottom: 30px;
+  }
 }
 
 .features__title-wrap {
@@ -16,6 +32,18 @@
   font-weight: 300;
   font-size: 66px;
   letter-spacing: 5px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 28px;
+  }
 }
 
 .features__title svg {
@@ -25,15 +53,36 @@
   width: 102px;
   height: 5px;
   fill: currentColor;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    left: 0;
+    width: 75px;
+    height: 3px;
+  }
 }
 
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1182px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    max-width: 580px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .features__item {
@@ -46,6 +95,23 @@
   font-size: 33px;
   text-align: center;
 
+  @media screen and (max-width: $screen--xxl - 1) {
+    flex-basis: 50%;
+    max-width: none;
+    font-size: 52px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    max-width: 280px;
+    min-width: 280px;
+  }
+
   &:nth-child(n + 4) {
     &::before {
       content: "";
@@ -56,12 +122,71 @@
       width: calc(100% - 60px);
       height: 2px;
       background-color: $color-main;
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        content: none;
+      }
+    }
+  }
+
+  &:nth-child(n + 3) {
+    &::before {
+      @media screen and (max-width: $screen--xxl - 1) {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 30px;
+        display: block;
+        width: calc(100% - 60px);
+        height: 2px;
+        background-color: $color-main;
+      }
+
+      @media screen and (max-width: $screen--md - 1) {
+        height: 1px;
+      }
+
+      @media screen and (max-width: $screen--xs - 1) {
+        content: none;
+      }
     }
   }
 
   &:nth-child(3n) {
     &::after {
       content: none;
+
+      @media screen and (max-width: $screen--xxl - 1) {
+        content: "";
+      }
+
+      @media screen and (max-width: $screen--xs - 1) {
+        content: none;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    &::after {
+      @media screen and (max-width: $screen--xxl - 1) {
+        content: none;
+      }
+    }
+  }
+
+  &:nth-child(n) {
+    &::after {
+      @media screen and (max-width: $screen--xs - 1) {
+        content: "";
+      }
+    }
+  }
+
+  &:last-child {
+    &::after {
+      @media screen and (max-width: $screen--xs - 1) {
+        content: none;
+      }
     }
   }
 
@@ -74,6 +199,17 @@
     width: 2px;
     height: calc(100% - 60px);
     background-color: $color-main;
+
+    @media screen and (max-width: $screen--md - 1) {
+      width: 1px;
+    }
+
+    @media screen and (max-width: $screen--xs - 1) {
+      top: 100%;
+      right: 30px;
+      width: calc(100% - 60px);
+      height: 1px;
+    }
   }
 }
 
@@ -87,12 +223,22 @@
     width: 65px;
     height: 70px;
     transform: translateX(-50%);
+
+    @media screen and (max-width: $screen--xxl - 1) {
+      width: 105px;
+      height: 110px;
+    }
+
+    @media screen and (max-width: $screen--md - 1) {
+      width: 46px;
+      height: 46px;
+    }
   }
 }
 
 .features__item--ask .features__item-content {
   &::before {
-    background: url("../img/bg/microphone.svg") center top no-repeat;
+    background: url("../img/bg/microphone.svg") center top/100% no-repeat;
   }
 }
 
@@ -129,6 +275,14 @@
 .features__item-content {
   position: relative;
   padding-top: 75px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 125px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 55px;
+  }
 }
 
 .features__item-content p {

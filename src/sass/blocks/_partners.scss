@@ -1,11 +1,27 @@
 .partners {
   color: $color-text--invert;
-  background: #5b5a5a url("../img/bg/bg-partners.jpg") center top no-repeat;
+  background: #5b5a5a url("../img/bg/bg-partners.jpg") center top/cover no-repeat;
 }
 
 .partners__inner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 55px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 90px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 38px;
+    padding-bottom: 0;
+  }
 }
 
 .partners__title-wrap {
@@ -19,6 +35,22 @@
   font-weight: 300;
   font-size: 66px;
   letter-spacing: 5px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 110px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    margin-bottom: 80px;
+  }
 }
 
 .partners__title svg {
@@ -29,11 +61,22 @@
   height: 5px;
   fill: currentColor;
   transform: scaleX(-1);
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    right: 5px;
+    width: 68px;
+    height: 3px;
+  }
 }
 
 .partners__slider {
   margin-top: 40px;
   margin-bottom: 40px;
-  padding-right: 140px;
-  padding-left: 140px;
+  padding-right: 120px;
+  padding-left: 120px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin: 0;
+    padding: 0;
+  }
 }

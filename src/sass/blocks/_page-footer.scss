@@ -18,6 +18,29 @@
   border: 0;
   border-bottom: 2px solid $color-white;
 
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 11px;
+    padding-bottom: 14px;
+    font-size: 54px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 9px;
+    padding-bottom: 12px;
+    font-size: 31px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 6px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
   &::placeholder {
     color: rgba(237, 227, 211, 0.5);
   }
@@ -25,6 +48,18 @@
 
 .page-footer .field--text {
   height: 35px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    height: 90px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    height: 65px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    height: 45px;
+  }
 }
 
 .page-footer .btn-image {
@@ -32,6 +67,16 @@
   padding-right: 5px;
   padding-left: 5px;
   color: $color-white;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .page-footer__inner {
@@ -42,6 +87,25 @@
   max-width: 1630px;
   margin: 0 auto;
   padding: 100px 30px 25px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 1240px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 40px;
+  }
 }
 
 .page-footer__about {
@@ -55,6 +119,32 @@
   font-size: 20px;
   line-height: 1.35;
   text-align: center;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 300;
+    font-size: 54px;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    width: 82%;
+    margin-bottom: 75px;
+    font-size: 31px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
 }
 
 .page-footer__about p {
@@ -67,6 +157,24 @@
 
 .page-footer__logo {
   margin-bottom: 55px;
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 35px;
+  }
+}
+
+.page-footer__logo img {
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 222px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 180px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    width: 108px;
+  }
 }
 
 .page-footer__second-nav {
@@ -74,11 +182,29 @@
   justify-content: space-evenly;
   max-width: calc(100% - 780px);
   margin: 0;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    justify-content: space-between;
+    max-width: none;
+  }
 }
 
 .page-footer__title {
   margin: 0 0 20px;
   font-size: 22px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-bottom: 60px;
+    font-size: 49px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    margin-bottom: 20px;
+  }
 }
 
 .page-footer__social {
@@ -87,12 +213,64 @@
   padding-top: 94px;
   padding-right: 65px;
   text-align: center;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 100%;
+    max-width: 905px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 0;
+  }
+}
+
+.page-footer__social .page-footer__title {
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 67px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    font-size: 39px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 30px;
+  }
 }
 
 .page-footer__social-links {
   max-width: 245px;
   margin: 0 auto 35px;
   padding-top: 8px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: none;
+    margin-bottom: 105px;
+    padding-top: 20px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    max-width: 500px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 0;
+  }
+}
+
+.page-footer__subscribe {
+  @media screen and (max-width: $screen--md - 1) {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 100%;
+  }
 }
 
 .page-footer__subscribe .form__group-fields {
@@ -103,6 +281,19 @@
 .page-footer__subscribe .field {
   min-width: 300px;
   padding-right: 36px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-right: 105px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-right: 65px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    min-width: auto;
+    padding-right: 35px;
+  }
 }
 
 .page-footer__subscribe .btn-image {
@@ -111,21 +302,76 @@
   right: 0;
   width: 36px;
   height: 100%;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 100px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    width: 65px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 30px;
+  }
 }
 
 .page-footer__subscribe-text {
   font-weight: 300;
   font-size: 18px;
   margin: 0 0 24px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-bottom: 80px;
+    font-size: 54px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-bottom: 40px;
+    font-size: 31px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 20px;
+  }
 }
 
 .page-footer__bottom {
   width: 100%;
   margin-top: 105px;
   text-align: center;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-top: 260px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-top: 160px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-top: 100px;
+  }
 }
 
 .page-footer__copyright {
   margin-top: 25px;
   margin-bottom: 25px;
+  font-weight: 300;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 16px;
+  }
 }

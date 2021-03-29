@@ -9,14 +9,171 @@
   background-color: $color-white;
   box-shadow: 0 2px 4px 1px rgba(30, 30, 30, 0.35);
 
+  @media screen and (max-width: $screen--md - 1) {
+    color: $color-text--invert;
+    box-shadow: none;
+  }
+
+  &::before {
+    @media screen and (max-width: $screen--md - 1) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0.85;
+    }
+  }
+
+  &--external {
+    @media screen and (max-width: $screen--md - 1) {
+      order: 1;
+      background: #68b2a9 url("../img/bg/bg-event-external.jpg") center/cover no-repeat;
+    }
+
+    &::before {
+      @media screen and (max-width: $screen--md - 1) {
+        background-color: #68b2a9;
+      }
+    }
+  }
+
+  &--interactive {
+    @media screen and (max-width: $screen--md - 1) {
+      background: #f47a6b url("../img/bg/bg-event-interactive.jpg") center/cover no-repeat;
+    }
+
+    &::before {
+      @media screen and (max-width: $screen--md - 1) {
+        background-color: #f47a6b;
+      }
+    }
+  }
+
+  &--internal {
+    @media screen and (max-width: $screen--md - 1) {
+      background: #f2b47c url("../img/bg/bg-event-internal.jpg") center/cover no-repeat;
+    }
+
+    &::before {
+      @media screen and (max-width: $screen--md - 1) {
+        background-color: #f2b47c;
+      }
+    }
+  }
+
   &--active {
     z-index: 1;
     transform: scale(1.15);
+  }
+
+  &--big {
+    @media screen and (max-width: $screen--xxl - 1) {
+      box-shadow: 0 2px 15px 4px rgba(30, 30, 30, 0.26);
+      transform: translateY(-15px);
+    }
+
+    @media screen and (max-width: $screen--md - 1) {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+.event-card .btn {
+  overflow: hidden;
+  white-space: nowrap;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding: 5px 25px;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding: 7px 26px;
+    font-size: 27px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 25px;
+  }
+}
+
+.event-card--big .event-card__head {
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-bottom: 25px;
+  }
+}
+
+.event-card--big .event-card__body {
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding: 98px 65px 40px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 38px;
+    padding-bottom: 35px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding: 0 25px 25px;
+  }
+}
+
+.event-card--big .event-card__body svg {
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 75px;
+    height: 75px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.event-card--big .btn {
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding: 7px 26px;
+  }
+}
+
+.event-card--big .event-card__btn {
+  margin-top: 20px;
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-top: 52px;
   }
 }
 
 .event-card--external .event-card__head {
   background: #68b2a9 url("../img/bg/bg-event-external.jpg") center/cover no-repeat;
+
+  @media screen and (max-width: $screen--md - 1) {
+    background: none;
+  }
 
   &::before,
   &::after {
@@ -24,19 +181,29 @@
   }
 }
 
-.event-card--external .event-card__body {
-  &::before {
-    background: url("../img/bg/icon_usb.svg") center top no-repeat;
-    background-size: 100%;
+.event-card--external .event-card__body svg {
+  fill: #4ca59a;
+
+  @media screen and (max-width: $screen--md - 1) {
+    fill: currentColor;
   }
 }
 
 .event-card--external .btn {
   background-color: #68b2a9;
+
+  @media screen and (max-width: $screen--md - 1) {
+    color: #68b2a9;
+    background-color: $color-text--invert;
+  }
 }
 
 .event-card--interactive .event-card__head {
   background: #f47a6b url("../img/bg/bg-event-interactive.jpg") center/cover no-repeat;
+
+  @media screen and (max-width: $screen--md - 1) {
+    background: none;
+  }
 
   &::before,
   &::after {
@@ -44,19 +211,29 @@
   }
 }
 
-.event-card--interactive .event-card__body {
-  &::before {
-    background: url("../img/bg/icon_tap.svg") center top no-repeat;
-    background-size: 100%;
+.event-card--interactive .event-card__body svg {
+  fill: #f47a6b;
+
+  @media screen and (max-width: $screen--md - 1) {
+    fill: currentColor;
   }
 }
 
 .event-card--interactive .btn {
   background-color: #f47a6b;
+
+  @media screen and (max-width: $screen--md - 1) {
+    color: #d9665c;
+    background-color: $color-text--invert;
+  }
 }
 
 .event-card--internal .event-card__head {
   background: #f2b47c url("../img/bg/bg-event-internal.jpg") center/cover no-repeat;
+
+  @media screen and (max-width: $screen--md - 1) {
+    background: none;
+  }
 
   &::before,
   &::after {
@@ -64,20 +241,44 @@
   }
 }
 
-.event-card--internal .event-card__body {
-  &::before {
-    background: url("../img/bg/icon_hard-disk.svg") center top no-repeat;
-    background-size: 100%;
+.event-card--internal .event-card__body svg {
+  fill: #f2b47c;
+
+  @media screen and (max-width: $screen--md - 1) {
+    fill: currentColor;
   }
 }
 
 .event-card--internal .btn {
   background-color: #f2b47c;
+
+  @media screen and (max-width: $screen--md - 1) {
+    color: #f2b47c;
+    background-color: $color-text--invert;
+  }
 }
 
 .event-card__head {
   position: relative;
   padding: 25px 20px 30px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding: 15px 10px 20px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
   &::before {
     content: "";
@@ -88,6 +289,10 @@
     width: 100%;
     height: 100%;
     opacity: 0.85;
+
+    @media screen and (max-width: $screen--md - 1) {
+      content: none;
+    }
   }
 
   &::after {
@@ -98,6 +303,10 @@
     display: block;
     width: 100%;
     height: 3px;
+
+    @media screen and (max-width: $screen--md - 1) {
+      content: none;
+    }
   }
 }
 
@@ -108,10 +317,39 @@
   color: $color-text--invert;
   line-height: 1.2;
   text-transform: uppercase;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    font-weight: 700;
+    font-size: 68px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 40px;
+  }
 }
 
 .event-card__title span {
   font-weight: 300;
+
+  @media screen and (max-width: $screen--md - 1) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 40px;
+  }
 }
 
 .event-card__body {
@@ -123,21 +361,85 @@
   align-items: center;
   padding: 122px 50px 45px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 28px;
-    left: 50%;
-    display: block;
+  @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 82px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 38px;
+    padding-bottom: 35px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.event-card__body svg {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  display: block;
+  width: 80px;
+  height: 80px;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    top: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    top: 52px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    transform: none;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    top: 10px;
+    left: 20px;
     width: 80px;
     height: 80px;
-    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    display: none;
   }
 }
 
 .event-card__content {
   font-weight: 300;
   font-size: 20px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-left: 150px;
+    font-size: 29px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-left: 80px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-left: 0;
+  }
 }
 
 .event-card__content p {
@@ -150,6 +452,12 @@
 
 .event-card__btn {
   margin-top: 15px;
-  overflow: hidden;
-  white-space: nowrap;
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-top: 52px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-top: 40px;
+  }
 }

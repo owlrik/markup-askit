@@ -13,15 +13,19 @@
     <div class="page-header__inner">
       <div class="page-header__logo-wrapper">
         <a class="logo page-header__logo">
-          <img src="img/content/logo.png" width="113" height="136" alt="Ask It logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/content/logo--mobile.png">
+            <img src="img/content/logo.png" width="113" height="136" alt="Ask It logo">
+          </picture>
         </a>
       </div>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="sr-only">Toggle menu</span>
-        </button>
+      <button class="page-header__toggle" type="button">
+        <!--<span class="sr-only">Toggle menu</span>-->
+        <span></span>
+      </button>
 
+      <nav class="main-nav">
         <ul class="main-nav__list main-nav__list--main">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Home</a>
@@ -84,17 +88,17 @@
           <p class="start-home__subtitle">Q&A, Polls and Slide-sharing for Events</p>
 
           <div class="start-home__btn-wrap">
-            <a class="btn btn--action start-home__btn" href="#">Create an event</a>
+            <a class="btn start-home__btn" href="#">Create an event</a>
 
             <form class="form form--join start-home__form" action="#">
               <div class="form__group">
                 <label class="sr-only" for="join-code">Your code</label>
                 <div class="form__group-fields">
-                  <input class="field field--text" type="text" name="join-code" id="join-code" placeholder="type code" required>
+                  <input class="field field--text" type="text" name="join-code" id="join-code" placeholder="type code" maxlength="6" required>
                 </div>
               </div>
 
-              <button class="btn btn--action start-home__btn" type="submit">Join event</button>
+              <button class="btn start-home__btn" type="submit">Join event</button>
             </form>
           </div>
         </div>
@@ -236,47 +240,47 @@
           </h2>
         </div>
 
-        <div class="partners-slider slider partners__slider">
-          <div class="slider-controls slider__controls">
-            <button class="slider-controls__btn slider-controls__btn--prev slider-controls__btn--flip btn-image swiper-button-prev">
-              <span class="sr-only">Предыдущие логотипы</span>
-              <svg width="22" height="45">
-                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
-
-            <button class="slider-controls__btn slider-controls__btn--next btn-image swiper-button-next">
-              <span class="sr-only">Следующие логотипы</span>
-              <svg width="22" height="45">
-                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
-              </svg>
-            </button>
+        <div class="partners-slider partners__slider">
+          <div class="swiper-container">
+            <div class="partners-slider__wrapper swiper-wrapper">
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-mccann.png" alt="McCANN">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-un-women.png" alt="UN Women">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-accenture.png" alt="accenture">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-cisco.png" alt="CISCO">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-eventbrite.png" alt="Eventbrite">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-zappos.png" alt="Zappos.com">
+              </div>
+              <div class="partners-slider__slide swiper-slide">
+                <img src="img/slides/logo-siemens.png" alt="Siemens">
+              </div>
+            </div>
           </div>
 
-          <div class="slider__container swiper-container">
-            <ul class="slider__wrapper swiper-wrapper">
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-mccann.png" alt="McCANN">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-un-women.png" alt="UN Women">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-accenture.png" alt="accenture">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-cisco.png" alt="CISCO">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-eventbrite.png" alt="Eventbrite">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-zappos.png" alt="Zappos.com">
-              </li>
-              <li class="partners-slider__item slider__slide swiper-slide">
-                <img src="img/slides/logo-siemens.png" alt="Siemens">
-              </li>
-            </ul>
+          <div class="slider-controls partners-slider__slider-controls">
+            <button class="slider-controls__btn slider-controls__btn--prev slider-controls__btn--flip btn-image">
+              <span class="sr-only">Previous partner's logo</span>
+              <svg width="22" height="45">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
+
+            <button class="slider-controls__btn slider-controls__btn--next btn-image">
+              <span class="sr-only">Next partner's logo</span>
+              <svg width="22" height="45">
+                <use xlink:href="img/sprite/sprite.svg#slider-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -303,6 +307,10 @@
 
             <div class="event-card__body">
               <div class="event-card__content">
+                <svg width="80" height="80">
+                  <use xlink:href="img/sprite/sprite.svg#usb"></use>
+                </svg>
+
                 <p>
                   Offers customizable on-line registration service for event organizers. Includes pricing, features,
                   and types of accounts.
@@ -313,7 +321,7 @@
             </div>
           </li>
 
-          <li class="event-card event-card--interactive event-type__item">
+          <li class="event-card event-card--interactive event-card--big event-type__item event-type__item--big">
             <div class="event-card__head">
               <h3 class="event-card__title">
                 <span>Interactive</span> event
@@ -322,6 +330,10 @@
 
             <div class="event-card__body">
               <div class="event-card__content">
+                <svg width="80" height="80">
+                  <use xlink:href="img/sprite/sprite.svg#tap"></use>
+                </svg>
+
                 <p>
                   Offers customizable on-line registration service for event organizers. Includes pricing, features,
                   and types of accounts.
@@ -341,6 +353,10 @@
 
             <div class="event-card__body">
               <div class="event-card__content">
+                <svg width="80" height="80">
+                  <use xlink:href="img/sprite/sprite.svg#hard-disk"></use>
+                </svg>
+
                 <p>
                   Offers customizable on-line registration service for event organizers. Includes pricing, features,
                   and types of accounts.

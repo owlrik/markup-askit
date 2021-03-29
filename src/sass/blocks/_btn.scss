@@ -16,10 +16,4 @@
   cursor: pointer;
   user-select: none;
   touch-action: manipulation;
-
-  &--action {
-    background-color: transparent;
-    border: 1px solid $color-white;
-    border-radius: 0;
-  }
 }

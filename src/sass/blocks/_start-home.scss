@@ -2,14 +2,58 @@
   color: $color-text--invert;
   background-color: #163155;
   background-image:
-    url("../img/bg/iphone-6.png"),
-    url("../img/bg/intro-1.jpg");
+    url("../img/bg/iphone-6-desktop@1x.png"),
+    url("../img/bg/intro-1-desktop@1x.jpg");
   background-position:
     calc(50% + 520px) calc(100% + 195px),
     center top;
+  background-size:
+    auto,
+    cover;
   background-repeat:
     no-repeat,
     no-repeat;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    background-image:
+      url("../img/bg/iphone-6-tablet@1x.png"),
+      url("../img/bg/intro-1-tablet@1x.jpg");
+    background-position:
+      calc(50% + 355px) calc(100% + 135px),
+      center top;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    background: url("../img/bg/intro-1-tablet@1x.jpg") center top/cover no-repeat;
+  }
+}
+
+.start-home .btn {
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 0;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    height: 40px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    height: 60px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    height: 45px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
 }
 
 .start-home__inner {
@@ -17,17 +61,67 @@
   max-width: 1630px;
   margin: 0 auto;
   padding: 284px 30px 285px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 1240px;
+    padding: 192px 20px 193px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 960px;
+    padding-top: 142px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 }
 
 .start-home__left {
   max-width: 1088px;
   padding-right: 46px;
   text-align: center;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 915px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: none;
+    padding-right: 0;
+  }
 }
 
 .start-home__left .field {
   max-width: 146px;
+  height: 60px;
   text-align: center;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    max-width: 95px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 145px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    max-width: 120px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    max-width: none;
+  }
 }
 
 .start-home__title {
@@ -35,6 +129,15 @@
   display: inline-block;
   margin: 0 auto 40px;
   font-size: 66px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-bottom: 26px;
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 30px;
+  }
 }
 
 .start-home__title svg {
@@ -44,29 +147,90 @@
   width: 333px;
   height: 8px;
   fill: currentColor;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    width: 230px;
+    height: 6px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    width: 166px;
+    height: 4px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    display: none;
+  }
 }
 
 .start-home__subtitle {
   margin-top: 0;
   font-size: 40px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    font-size: 22px;
+  }
 }
 
 .start-home__btn-wrap {
   display: flex;
   justify-content: center;
   margin-top: 200px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-top: 132px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    flex-direction: column;
+  }
 }
 
 .start-home__form {
   display: flex;
   margin-left: 55px;
+
+  @media screen and (max-width: $screen--xxl - 1) {
+    margin-left: 40px;
+  }
+
+  @media screen and (max-width: $screen--md - 1) {
+    margin-left: 60px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-left: 20px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }
 
 .start-home__form .form__group {
+  //width: 50%;
   order: 1;
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 50%;
+  }
 }
 
 .start-home__form .start-home__btn {
+  //width: 50%;
   padding-right: 16px;
   padding-left: 10px;
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 50%;
+  }
 }
