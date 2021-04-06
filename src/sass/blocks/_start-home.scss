@@ -1,4 +1,5 @@
 .start-home {
+  padding-top: 167px;
   color: $color-text--invert;
   background-color: #163155;
   background-image:
@@ -15,6 +16,7 @@
     no-repeat;
 
   @media screen and (max-width: $screen--xxl - 1) {
+    padding-top: 110px;
     background-image:
       url("../img/bg/iphone-6-tablet@1x.png"),
       url("../img/bg/intro-1-tablet@1x.jpg");

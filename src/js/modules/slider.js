@@ -35,4 +35,4 @@ export const initSliders = () => {
       document.activeElement.blur();
     });
   });
-}
+};
