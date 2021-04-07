@@ -8,10 +8,18 @@
   text-align: center;
   background-color: $color-white;
   box-shadow: 0 2px 4px 1px rgba(30, 30, 30, 0.35);
+  transition: transform 1s;
 
   @media screen and (max-width: $screen--md - 1) {
     color: $color-text--invert;
     box-shadow: none;
+  }
+
+  &:hover {
+    @media screen and (min-width: $screen--xxl) {
+      z-index: 1;
+      transform: scale(1.15);
+    }
   }
 
   &::before {
