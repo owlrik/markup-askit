@@ -28,6 +28,10 @@
   @media screen and (max-width: $screen--lg - 1) {
     background: url("../img/bg/intro-1-tablet@1x.jpg") center top/cover no-repeat;
   }
+
+  @media screen and (max-width: $screen--md - 1) {
+    padding-top: 0;
+  }
 }
 
 .start-home .btn {
