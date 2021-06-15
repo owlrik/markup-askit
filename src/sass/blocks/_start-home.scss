@@ -131,10 +131,9 @@
 }
 
 .start-home__title {
-  position: relative;
-  display: inline-block;
   margin: 0 auto 40px;
-  font-size: 66px;
+  font-weight: 700;
+  letter-spacing: 0;
 
   @media screen and (max-width: $screen--xxl - 1) {
     margin-bottom: 26px;
@@ -147,12 +146,10 @@
 }
 
 .start-home__title svg {
-  position: absolute;
-  top: 100%;
   right: 0;
+  left: auto;
   width: 333px;
   height: 8px;
-  fill: currentColor;
 
   @media screen and (max-width: $screen--xxl - 1) {
     width: 230px;

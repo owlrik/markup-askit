@@ -29,12 +29,7 @@
 }
 
 .partners__title {
-  position: relative;
-  display: inline-block;
   margin: 0 0 60px;
-  font-weight: 300;
-  font-size: 66px;
-  letter-spacing: 5px;
 
   @media screen and (max-width: $screen--xxl - 1) {
     font-size: 45px;
@@ -54,14 +49,6 @@
 }
 
 .partners__title svg {
-  position: absolute;
-  top: 100%;
-  right: 5px;
-  width: 102px;
-  height: 5px;
-  fill: currentColor;
-  transform: scaleX(-1);
-
   @media screen and (max-width: $screen--xxl - 1) {
     right: 5px;
     width: 68px;

@@ -1,0 +1,22 @@
+.title {
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 0.075em;
+}
+
+.title svg {
+  position: absolute;
+  top: 100%;
+  left: 0.075em;
+  width: 102px;
+  height: 5px;
+  fill: currentColor;
+}
+
+.title--icon-right svg {
+  right: 0.075em;
+  left: auto;
+  transform: scaleX(-1);
+}

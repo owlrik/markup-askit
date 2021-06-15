@@ -32,12 +32,7 @@
 }
 
 .about__title {
-  position: relative;
-  display: inline-block;
   margin: 0 0 78px;
-  font-weight: 300;
-  font-size: 66px;
-  letter-spacing: 5px;
 
   @media screen and (max-width: $screen--xxl - 1) {
     margin-bottom: 170px;
@@ -54,14 +49,6 @@
 }
 
 .about__title svg {
-  position: absolute;
-  top: 100%;
-  right: 5px;
-  width: 102px;
-  height: 5px;
-  fill: currentColor;
-  transform: scaleX(-1);
-
   @media screen and (max-width: $screen--xxl - 1) {
     width: 68px;
     height: 3px;

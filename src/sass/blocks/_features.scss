@@ -26,12 +26,7 @@
 }
 
 .features__title {
-  position: relative;
-  display: inline-block;
   margin: 0 0 60px;
-  font-weight: 300;
-  font-size: 66px;
-  letter-spacing: 5px;
 
   @media screen and (max-width: $screen--xxl - 1) {
     font-size: 45px;
@@ -47,13 +42,6 @@
 }
 
 .features__title svg {
-  position: absolute;
-  top: 100%;
-  left: 5px;
-  width: 102px;
-  height: 5px;
-  fill: currentColor;
-
   @media screen and (max-width: $screen--xxl - 1) {
     left: 0;
     width: 75px;
