@@ -4,6 +4,18 @@
   font-weight: 300;
   font-size: 66px;
   letter-spacing: 0.075em;
+
+  @media screen and (max-width: $screen-lg - 1) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: $screen-md - 1) {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    font-size: 25px;
+  }
 }
 
 .title svg {
@@ -13,6 +25,11 @@
   width: 102px;
   height: 5px;
   fill: currentColor;
+
+  @media screen and (max-width: $screen-lg - 1) {
+    width: 86px;
+    height: 4px;
+  }
 }
 
 .title--icon-right svg {

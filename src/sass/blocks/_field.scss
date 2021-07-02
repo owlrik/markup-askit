@@ -9,10 +9,10 @@
   border: none;
   border-radius: 0;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-right: 12px;
-    padding-left: 12px;
-    font-size: 16px;
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 20px;
   }
 
   &::placeholder {
@@ -21,9 +21,5 @@
 
   &--text {
     height: 60px;
-
-    @media screen and (max-width: $screen--xxl - 1) {
-      height: 40px;
-    }
   }
 }

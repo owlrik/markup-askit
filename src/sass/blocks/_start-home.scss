@@ -15,21 +15,12 @@
     no-repeat,
     no-repeat;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-top: 110px;
-    background-image:
-      url("../img/bg/iphone-6-tablet@1x.png"),
-      url("../img/bg/intro-1-tablet@1x.jpg");
-    background-position:
-      calc(50% + 355px) calc(100% + 135px),
-      center top;
-  }
-
-  @media screen and (max-width: $screen--lg - 1) {
+  @media screen and (max-width: $screen-xxl - 1) {
+    padding-top: 136px;
     background: url("../img/bg/intro-1-tablet@1x.jpg") center top/cover no-repeat;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     padding-top: 0;
   }
 }
@@ -40,25 +31,36 @@
   border: 1px solid $color-white;
   border-radius: 0;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    height: 40px;
-    padding-right: 12px;
-    padding-left: 12px;
-    font-size: 17px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    height: 50px;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 24px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    height: 60px;
-    padding-top: 13px;
-    padding-bottom: 14px;
-    font-size: 26px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     height: 45px;
-    padding-top: 8px;
-    padding-bottom: 10px;
     font-size: 20px;
+  }
+}
+
+.start-home .field {
+  max-width: 146px;
+  height: 60px;
+  text-align: center;
+
+  @media screen and (max-width: $screen-xxl - 1) {
+    height: 50px;
+  }
+
+  @media screen and (max-width: $screen-md - 1) {
+    max-width: 120px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    max-width: none;
   }
 }
 
@@ -68,23 +70,24 @@
   margin: 0 auto;
   padding: 284px 30px 285px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 1240px;
-    padding: 192px 20px 193px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    padding-top: 190px;
+    padding-bottom: 190px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    max-width: 960px;
+  @media screen and (max-width: $screen-lg - 1) {
     padding-top: 142px;
+    padding-bottom: 142px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    padding-bottom: 70px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     padding-top: 80px;
     padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -93,40 +96,10 @@
   padding-right: 46px;
   text-align: center;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 915px;
-  }
-
-  @media screen and (max-width: $screen--lg - 1) {
-    max-width: none;
+  @media screen and (max-width: $screen-xxl - 1) {
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 0;
-  }
-}
-
-.start-home__left .field {
-  max-width: 146px;
-  height: 60px;
-  text-align: center;
-
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 95px;
-    height: 40px;
-  }
-
-  @media screen and (max-width: $screen--lg - 1) {
-    max-width: 145px;
-    height: 60px;
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
-    max-width: 120px;
-    height: 45px;
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
-    max-width: none;
   }
 }
 
@@ -135,13 +108,12 @@
   font-weight: 700;
   letter-spacing: 0;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    margin-bottom: 26px;
-    font-size: 45px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    margin-bottom: 20px;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
-    font-size: 30px;
+  @media screen and (max-width: $screen-md - 1) {
+    font-size: 35px;
   }
 }
 
@@ -151,17 +123,17 @@
   width: 333px;
   height: 8px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
+  @media screen and (max-width: $screen-lg - 1) {
     width: 230px;
     height: 6px;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
-    width: 166px;
+  @media screen and (max-width: $screen-md - 1) {
+    width: 165px;
     height: 4px;
   }
 
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen--sm - 1) {
     display: none;
   }
 }
@@ -170,12 +142,16 @@
   margin-top: 0;
   font-size: 40px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    font-size: 28px;
+  @media screen and (max-width: $screen-lg - 1) {
+    font-size: 32px;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
-    font-size: 22px;
+  @media screen and (max-width: $screen-md - 1) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    font-size: 20px;
   }
 }
 
@@ -184,16 +160,20 @@
   justify-content: center;
   margin-top: 200px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    margin-top: 132px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    margin-top: 150px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     margin-top: 60px;
   }
 
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xs--550 - 1) {
     flex-direction: column;
+    justify-content: flex-start;
+    max-width: 270px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -201,39 +181,25 @@
   display: flex;
   margin-left: 55px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    margin-left: 40px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
-    margin-left: 60px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
-    margin-left: 20px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xs--550 - 1) {
     margin-top: 30px;
     margin-left: 0;
   }
 }
 
 .start-home__form .form__group {
-  //width: 50%;
   order: 1;
 
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xs--550 - 1) {
     width: 50%;
   }
 }
 
 .start-home__form .start-home__btn {
-  //width: 50%;
   padding-right: 16px;
   padding-left: 10px;
 
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xs--550 - 1) {
     width: 50%;
   }
 }

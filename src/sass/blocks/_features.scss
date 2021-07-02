@@ -4,20 +4,18 @@
   margin: 0 auto;
   padding: 170px 30px 92px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 1240px;
-    padding-top: 110px;
-    padding-right: 20px;
-    padding-left: 20px;
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-top: 140px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    padding-top: 30px;
-    padding-bottom: 72px;
+  @media screen and (max-width: $screen-md - 1) {
+    padding-top: 60px;
   }
 
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xxs--425 - 1) {
+    padding-right: 15px;
     padding-bottom: 30px;
+    padding-left: 15px;
   }
 }
 
@@ -27,26 +25,6 @@
 
 .features__title {
   margin: 0 0 60px;
-
-  @media screen and (max-width: $screen--xxl - 1) {
-    font-size: 45px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
-    margin-bottom: 25px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
-    font-size: 28px;
-  }
-}
-
-.features__title svg {
-  @media screen and (max-width: $screen--xxl - 1) {
-    left: 0;
-    width: 75px;
-    height: 3px;
-  }
 }
 
 .features__list {
@@ -58,18 +36,15 @@
   padding: 0;
   list-style: none;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 1200px;
+  @media screen and (max-width: $screen-md - 1) {
+    max-width: 600px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    max-width: 580px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xxs--425 - 1) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    max-width: 240px;
   }
 }
 
@@ -77,27 +52,33 @@
   position: relative;
   flex: 1 1 33%;
   max-width: 394px;
-  //min-width: 250px;
   padding: 35px 44px 38px;
   font-weight: 700;
   font-size: 33px;
   text-align: center;
 
-  @media screen and (max-width: $screen--xxl - 1) {
+  @media screen and (max-width: $screen-lg - 1) {
     flex-basis: 50%;
     max-width: none;
-    font-size: 52px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    padding-top: 30px;
-    padding-bottom: 25px;
+  @media screen and (max-width: $screen-md - 1) {
+    padding: 30px 25px 25px;
     font-size: 22px;
   }
 
-  @media screen and (max-width: $screen--xs - 1) {
-    max-width: 280px;
-    min-width: 280px;
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: $screen-xxs--425 - 1) {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &:nth-child(n + 4) {
@@ -111,7 +92,7 @@
       height: 2px;
       background-color: $color-main;
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         content: none;
       }
     }
@@ -119,7 +100,7 @@
 
   &:nth-child(n + 3) {
     &::before {
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         content: "";
         position: absolute;
         top: 0;
@@ -130,11 +111,11 @@
         background-color: $color-main;
       }
 
-      @media screen and (max-width: $screen--md - 1) {
+      @media screen and (max-width: $screen-md - 1) {
         height: 1px;
       }
 
-      @media screen and (max-width: $screen--xs - 1) {
+      @media screen and (max-width: $screen-xxs--425 - 1) {
         content: none;
       }
     }
@@ -144,11 +125,11 @@
     &::after {
       content: none;
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         content: "";
       }
 
-      @media screen and (max-width: $screen--xs - 1) {
+      @media screen and (max-width: $screen-xxs--425 - 1) {
         content: none;
       }
     }
@@ -156,7 +137,7 @@
 
   &:nth-child(even) {
     &::after {
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         content: none;
       }
     }
@@ -164,15 +145,19 @@
 
   &:nth-child(n) {
     &::after {
-      @media screen and (max-width: $screen--xs - 1) {
+      @media screen and (max-width: $screen-xxs--425 - 1) {
         content: "";
       }
     }
   }
 
   &:last-child {
+    @media screen and (max-width: $screen-xxs--425 - 1) {
+      margin-bottom: 0;
+    }
+
     &::after {
-      @media screen and (max-width: $screen--xs - 1) {
+      @media screen and (max-width: $screen-xxs--425 - 1) {
         content: none;
       }
     }
@@ -188,11 +173,11 @@
     height: calc(100% - 60px);
     background-color: $color-main;
 
-    @media screen and (max-width: $screen--md - 1) {
+    @media screen and (max-width: $screen-md - 1) {
       width: 1px;
     }
 
-    @media screen and (max-width: $screen--xs - 1) {
+    @media screen and (max-width: $screen-xxs--425 - 1) {
       top: 100%;
       right: 30px;
       width: calc(100% - 60px);
@@ -212,12 +197,7 @@
     height: 70px;
     transform: translateX(-50%);
 
-    @media screen and (max-width: $screen--xxl - 1) {
-      width: 105px;
-      height: 110px;
-    }
-
-    @media screen and (max-width: $screen--md - 1) {
+    @media screen and (max-width: $screen-md - 1) {
       width: 46px;
       height: 46px;
     }
@@ -264,11 +244,7 @@
   position: relative;
   padding-top: 75px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-top: 125px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     padding-top: 55px;
   }
 }

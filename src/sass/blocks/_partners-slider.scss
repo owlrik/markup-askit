@@ -3,7 +3,7 @@
 }
 
 .partners-slider .slider-controls {
-  @media screen and (max-width: $screen--lg - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     display: none;
   }
 }
@@ -21,7 +21,7 @@
 }
 
 .partners-slider__wrapper {
-  @media screen and (max-width: $screen--lg - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,8 +29,8 @@
     margin: 0 auto;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    max-width: 380px;
+  @media screen and (max-width: $screen-xs - 1) {
+    justify-content: space-around;
   }
 }
 
@@ -43,15 +43,17 @@
   margin-right: 25px;
   margin-left: 25px;
 
-  @media screen and (max-width: $screen--lg - 1) {
-    flex-grow: 1;
+  @media screen and (max-width: $screen-md - 1) {
+    width: 33%;
+    height: auto;
     margin: 0 0 65px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    flex: 0 1 28%;
-    height: 50px;
-    margin: 0 auto 40px;
+  @media screen and (max-width: $screen-xs - 1) {
+    width: 45%;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
   }
 }
 

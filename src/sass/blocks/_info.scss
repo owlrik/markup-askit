@@ -4,18 +4,23 @@
   margin: 0 auto;
   padding: 170px 30px 140px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    max-width: 1240px;
-    padding: 110px 20px 25px;
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-top: 140px;
+    padding-bottom: 50px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    max-width: 960px;
+  @media screen and (max-width: $screen-md - 1) {
+    padding-top: 60px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    padding-top: 50px;
-    padding-bottom: 38px;
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: $screen-xxs--425 - 1) {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -26,26 +31,8 @@
 .info__title {
   margin: 0 0 108px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    margin-bottom: 46px;
-    font-size: 45px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-xxl - 1) {
     margin-bottom: 60px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
-    margin-bottom: 45px;
-    font-size: 28px;
-  }
-}
-
-.info__title svg {
-  @media screen and (max-width: $screen--xxl - 1) {
-    left: 2px;
-    width: 68px;
-    height: 3px;
   }
 }
 
@@ -56,27 +43,14 @@
   padding: 0;
   list-style: none;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-right: 90px;
-    padding-left: 90px;
-  }
-
-  @media screen and (max-width: $screen--lg - 1) {
-    padding: 0;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 760px;
     margin: 0 auto;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
-    max-width: 500px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
+  @media screen and (max-width: $screen-xxs--425 - 1) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -85,47 +59,35 @@
 
 .info__item {
   position: relative;
-  flex: 1 1 320px;
-  margin-right: 30px;
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
   padding-top: 178px;
   text-align: center;
 
-  @media screen and (max-width: $screen--xxl - 1) {
+  @media screen and (max-width: $screen-lg - 1) {
+    max-width: 270px;
     padding-top: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    margin-right: 20px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
-    max-width: 230px;
-    margin-right: 0;
+  @media screen and (max-width: $screen-md - 1) {
+    width: 48%;
+    max-width: 260px;
     margin-bottom: 50px;
-    padding-top: 135px;
   }
 
-  @media screen and (max-width: $screen--xs - 1) {
-    flex-basis: auto;
-    padding-top: 115px;
+  @media screen and (min-width: $screen-xxs--425) and (max-width: $screen-xs--550 - 1) {
+    max-width: 200px;
+    padding-top: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 
-  &:nth-child(odd) {
-    @media screen and (max-width: $screen--md - 1) {
-      margin-right: 40px;
-    }
-
-    @media screen and (max-width: $screen--sm - 1) {
-      margin-right: 0;
-    }
-  }
-
-  &:last-child {
-    margin-right: 0;
-
-    @media screen and (max-width: $screen--xs - 1) {
-      margin-bottom: 0;
-    }
+  @media screen and (max-width: $screen-xxs--425 - 1) {
+    width: 100%;
+    max-width: 220px;
   }
 
   &::before {
@@ -142,14 +104,14 @@
     border: 1px solid $color-main;
     transform: translateX(-50%);
 
-    @media screen and (max-width: $screen--xxl - 1) {
+    @media screen and (max-width: $screen-lg - 1) {
       width: 86px;
       height: 86px;
     }
 
-    @media screen and (max-width: $screen--md - 1) {
-      width: 96px;
-      height: 96px;
+    @media screen and (min-width: $screen-xxs--425) and (max-width: $screen-xs--550 - 1) {
+      width: 70px;
+      height: 70px;
     }
   }
 
@@ -159,7 +121,7 @@
       background-size: 74px auto;
       background-image: url("../img/bg/create-account.svg");
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         background-size: 48px, auto;
       }
     }
@@ -170,7 +132,7 @@
       background-size: 82px auto;
       background-image: url("../img/bg/faq.svg");
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         background-size: 55px, auto;
       }
     }
@@ -181,7 +143,7 @@
       background-size: 74px auto;
       background-image: url("../img/bg/qr-code.svg");
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         background-size: 65px, auto;
       }
     }
@@ -192,7 +154,7 @@
       background-size: 98px auto;
       background-image: url("../img/bg/favorite.svg");
 
-      @media screen and (max-width: $screen--xxl - 1) {
+      @media screen and (max-width: $screen-lg - 1) {
         background-size: 65px, auto;
       }
     }
@@ -203,15 +165,15 @@
   margin: 0;
   font-size: 29px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    font-size: 18px;
+  @media screen and (max-width: $screen-xl - 1) {
+    font-size: 25px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    font-size: 21px;
+  @media screen and (max-width: $screen-lg - 1) {
+    font-size: 20px;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
-    font-size: 18px;
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    font-size: 16px;
   }
 }

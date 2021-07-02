@@ -3,15 +3,18 @@
   flex-wrap: wrap;
   padding-top: 94px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-top: 120px;
-    padding-right: 80px;
-    padding-left: 80px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-xxs--425 - 1) {
     display: none;
   }
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    padding-top: 0;
+  }
+}
+
+.second-nav__wrapper {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .second-nav__list {
@@ -22,10 +25,6 @@
 
 .second-nav__item {
   line-height: 1;
-
-  @media screen and (max-width: $screen--xxl - 1) {
-    line-height: 1.2;
-  }
 }
 
 .second-nav__link {
@@ -33,7 +32,7 @@
   font-size: 18px;
   text-decoration: none;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    font-size: 39px;
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    font-size: 16px;
   }
 }

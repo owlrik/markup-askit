@@ -3,9 +3,9 @@
   flex-grow: 1;
   justify-content: space-between;
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     position: fixed;
-    top: 110px;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -15,6 +15,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: $color-black;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    top: 70px;
   }
 
   &--opened {
@@ -36,7 +40,7 @@
   padding: 0;
   list-style: none;
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     text-align: center;
   }
 
@@ -45,19 +49,19 @@
     margin-right: 35px;
     margin-left: 30px;
 
-    @media screen and (max-width: $screen--lg - 1) {
-      margin-right: 15px;
+    @media screen and (max-width: $screen-lg - 1) {
+      margin-right: 0;
       margin-left: 10px;
     }
 
-    @media screen and (max-width: $screen--md - 1) {
+    @media screen and (max-width: $screen-md - 1) {
       position: relative;
       margin: 0;
       padding-top: 30px;
     }
 
     &::before {
-      @media screen and (max-width: $screen--md - 1) {
+      @media screen and (max-width: $screen-md - 1) {
         content: "";
         position: absolute;
         top: 15px;
@@ -78,11 +82,11 @@
 .main-nav__list--user .main-nav__item {
   margin-right: 30px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
+  @media screen and (max-width: $screen-xxl - 1) {
     margin-right: 10px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     margin-right: 0;
   }
 }
@@ -91,16 +95,17 @@
   padding-bottom: 59px;
   font-size: 15px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-bottom: 26px;
-    font-size: 12px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    padding-bottom: 55px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    padding-bottom: 23px;
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-top: 45px;
+    padding-bottom: 41px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
+    padding-top: 12px;
     padding-bottom: 12px;
     font-size: 18px;
   }
@@ -109,11 +114,11 @@
 .main-nav__item {
   margin-right: 20px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
+  @media screen and (max-width: $screen-xxl - 1) {
     margin-right: 10px;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     margin-right: 0;
   }
 
@@ -136,25 +141,31 @@
     color: $color-text--invert;
     background-color: #1e1d1d;
 
-    @media screen and (max-width: $screen--md - 1) {
+    @media screen and (max-width: $screen-md - 1) {
       background-color: transparent;
     }
   }
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-top: 38px;
-    padding-bottom: 43px;
+  @media screen and (max-width: $screen-xxl - 1) {
+    padding-top: 62px;
+    padding-bottom: 72px;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: $screen-md - 1) {
+    padding: 12px 10px;
     font-size: 22px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    padding-top: 42px;
-    padding-bottom: 45px;
+  @media screen and (max-width: $screen-xs - 1) {
+    padding: 10px;
     font-size: 18px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
-    padding: 12px 10px;
   }
 
   &--v-icon {
@@ -162,13 +173,13 @@
     flex-direction: column;
     align-items: center;
 
-    @media screen and (max-width: $screen--md - 1) {
+    @media screen and (max-width: $screen-md - 1) {
       display: block;
     }
   }
 
   &--active {
-    @media screen and (min-width: $screen--md) {
+    @media screen and (min-width: $screen-md) {
       font-weight: 400;
       color: $color-text--invert;
       background-color: #1e1d1d;
@@ -188,7 +199,7 @@
 }
 
 .main-nav__link--v-icon .main-nav__icon {
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     position: absolute;
     top: 50%;
     right: 100%;
@@ -199,11 +210,21 @@
     height: 30px;
     transform: translateY(-50%);
   }
+
+  @media screen and (max-width: $screen-xs - 1) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .main-nav__link--v-icon .main-nav__icon svg {
-  @media screen and (max-width: $screen--md - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     width: 25px;
     height: 25px;
+  }
+
+  @media screen and (max-width: $screen-xs - 1) {
+    width: 20px;
+    height: 20px;
   }
 }

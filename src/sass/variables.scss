@@ -1,8 +1,8 @@
 // Colors
 //---------------------------------
 
-$color-black: #121111;
-$color-white: #ffffff;
+$color-black:                     #121111;
+$color-white:                     #ffffff;
 $color-transparent:               rgba(255, 255, 255, 0);
 
 $color-main:                      #037693;
@@ -25,14 +25,16 @@ $line-height:                     1.33;
 // Viewports
 //---------------------------------
 
-$screen--xxs:                     320px;
-$screen--xs:                      500px;
+$screen-xxs:                      320px;
+$screen-xxs--425:                 425px;
+$screen-xs:                       480px;
+$screen-xs--550:                  550px;
 $screen--sm:                      768px;
-$screen--md:                      1024px;
-$screen--lg:                      1280px;
-$screen--xl:                      1440px;
-$screen--xxl:                     1680px;
-$screen--xxxl:                    1920px;
+$screen-md:                       1024px;
+$screen-xxl:                      1680px;
+$screen-lg:                       1280px;
+$screen-xl:                       1440px;
+$screen-xxxl:                     1920px;
 
 // Retina
 //---------------------------------

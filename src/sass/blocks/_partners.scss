@@ -10,17 +10,17 @@
   padding-top: 170px;
   padding-bottom: 55px;
 
-  @media screen and (max-width: $screen--xxl - 1) {
-    padding-top: 110px;
+  @media screen and (max-width: $screen-lg - 1) {
+    padding-top: 140px;
   }
 
-  @media screen and (max-width: $screen--lg - 1) {
-    padding-bottom: 20px;
+  @media screen and (max-width: $screen-md - 1) {
+    padding: 38px 20px 0;
   }
 
-  @media screen and (max-width: $screen--md - 1) {
-    padding-top: 38px;
-    padding-bottom: 0;
+  @media screen and (max-width: $screen-xxs--425 - 1) {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -30,30 +30,6 @@
 
 .partners__title {
   margin: 0 0 60px;
-
-  @media screen and (max-width: $screen--xxl - 1) {
-    font-size: 45px;
-  }
-
-  @media screen and (max-width: $screen--md - 1) {
-    margin-bottom: 110px;
-  }
-
-  @media screen and (max-width: $screen--sm - 1) {
-    font-size: 28px;
-  }
-
-  @media screen and (max-width: $screen--xs - 1) {
-    margin-bottom: 80px;
-  }
-}
-
-.partners__title svg {
-  @media screen and (max-width: $screen--xxl - 1) {
-    right: 5px;
-    width: 68px;
-    height: 3px;
-  }
 }
 
 .partners__slider {
@@ -62,7 +38,7 @@
   padding-right: 120px;
   padding-left: 120px;
 
-  @media screen and (max-width: $screen--lg - 1) {
+  @media screen and (max-width: $screen-md - 1) {
     margin: 0;
     padding: 0;
   }

@@ -17,7 +17,7 @@ const initSwiper = (slider) => new SwiperCore(slider, {
 const initPartnersSlider = () => {
   if (partnersSlider) {
     let swiperSlider;
-    let partnersBreakpoint = window.matchMedia('(max-width:1279px)');
+    let partnersBreakpoint = window.matchMedia('(max-width:1023px)');
 
     const checkBreakpoint = () => {
       if (partnersBreakpoint.matches) {
