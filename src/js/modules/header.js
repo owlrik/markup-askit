@@ -6,6 +6,12 @@ const startSection = document.querySelector('.start-home');
 
 const breakpointMd = window.matchMedia('(max-width: 1023px)');
 
+const clearMenu = () => {
+  navLinks.forEach(menuLink => {
+    menuLink.classList.remove('main-nav__link--active');
+  });
+};
+
 const highlightActiveMenuLink = () => {
   if ((window.pageYOffset + header.clientHeight) >= startSection.clientHeight) {
     header.classList.add('page-header--fixed');
@@ -26,13 +32,14 @@ const highlightActiveMenuLink = () => {
 
     if (currentLink) {
         currentLink.classList.add('main-nav__link--active');
-      }
     }
-    else {
-      if (header.classList.contains('page-header--fixed')) {
-        header.classList.remove('page-header--fixed');
-      }
+  } else {
+    if (header.classList.contains('page-header--fixed')) {
+      header.classList.remove('page-header--fixed');
+
+      clearMenu();
     }
+  }
 };
 
 const toggleMenuHighlighter = () => {
