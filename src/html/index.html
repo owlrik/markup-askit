@@ -50,7 +50,7 @@
 
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--v-icon" href="#">
+            <a class="main-nav__link main-nav__link--v-icon" href="#" data-modal="login">
               <span class="main-nav__icon" aria-hidden="true">
                 <svg width="25" height="27">
                   <use xlink:href="img/sprite/sprite.svg#login"></use>
@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--v-icon" href="#">
+            <a class="main-nav__link main-nav__link--v-icon" href="#" data-modal="register">
               <span class="main-nav__icon" aria-hidden="true">
                 <svg width="22" height="26">
                   <use xlink:href="img/sprite/sprite.svg#register"></use>
@@ -557,7 +557,7 @@
         <div class="page-footer__subscribe">
           <p class="page-footer__subscribe-text">Subscribe to our newsletter</p>
 
-          <form class="form form--subscribe" action="#">
+          <form class="form form--subscribe" method="post" action="#">
             <div class="form__group">
               <label class="sr-only" for="email">Your email</label>
               <div class="form__group-fields">
@@ -579,6 +579,77 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal modal-login">
+    <div class="modal__inner">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <h3 class="modal__title">Log in</h3>
+
+        <form class="form form--login modal__form" method="post" action="#">
+          <div class="form__group">
+            <label class="sr-only" for="login-email">Your email</label>
+            <div class="form__group-fields">
+              <input class="field field--text" type="email" name="email" id="login-email" placeholder="Email address" required>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="sr-only" for="login-password">Your password</label>
+            <div class="form__group-fields">
+              <input class="field field--text" type="password" name="password" id="login-password" placeholder="Password" required>
+            </div>
+          </div>
+
+          <button class="btn form__submit" type="submit">Log in</button>
+        </form>
+
+        <button class="btn-image modal__close" type="button">
+          <span class="sr-only">Close popup window</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-register">
+    <div class="modal__inner">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <h3 class="modal__title">Register</h3>
+
+        <form class="form form--register" method="post" action="#">
+          <div class="form__group">
+            <label class="sr-only" for="register-name">Your name</label>
+            <div class="form__group-fields">
+              <input class="field field--text" type="text" name="name" id="register-name" placeholder="Name" required>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="sr-only" for="register-email">Your email</label>
+            <div class="form__group-fields">
+              <input class="field field--text" type="email" name="email" id="register-email" placeholder="Email address" required>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="sr-only" for="register-password">Your password</label>
+            <div class="form__group-fields">
+              <input class="field field--text" type="password" name="password" id="register-password" placeholder="Password" required>
+            </div>
+          </div>
+
+          <button class="btn form__submit" type="submit">Register</button>
+        </form>
+
+        <button class="btn-image modal__close" type="button">
+          <span class="sr-only">Close popup window</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

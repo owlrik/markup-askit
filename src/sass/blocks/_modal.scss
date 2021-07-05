@@ -1,0 +1,131 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  min-width: 320px;
+  overflow-y: auto;
+  font-size: 16px;
+  line-height: 1.33;
+  color: $color-text--invert;
+  background-color: $color-black;
+
+  &--active {
+    display: block;
+  }
+}
+
+.modal .form__group {
+  margin-bottom: 20px;
+}
+
+.modal .field {
+  color: $color-text--invert;
+  background-color: $color-black;
+  border-bottom: 1px solid $color-text--invert;
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    font-size: 18px;
+  }
+
+  &::placeholder {
+    color: $color-text--invert;
+  }
+}
+
+.modal .btn {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $color-transparent;
+  border: 1px solid $color-text--invert;
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    padding: 6px 20px;
+    font-size: 23px;
+  }
+}
+
+.modal .form__submit {
+  margin-top: 60px;
+}
+
+.modal__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 40px;
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    padding: 30px 15px;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  background-color: $color-black;
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    width: 100%;
+  }
+}
+
+.modal__title {
+  display: block;
+  margin: 0 auto 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+
+  @media screen and (max-width: $screen-xs--550 - 1) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 1px;
+    background-color: $color-white;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    transform: translateX(-50%) rotate3d(0, 0, 1, 45deg);
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate3d(0, 0, 1, -45deg);
+  }
+}
