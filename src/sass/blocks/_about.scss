@@ -89,7 +89,7 @@
     font-weight: 700;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
+  @media screen and (max-width: $screen-sm - 1) {
     margin-bottom: 5px;
     font-size: 45px;
   }
@@ -113,7 +113,7 @@
     padding: 0 0 40px;
   }
 
-  @media screen and (max-width: $screen--sm - 1) {
+  @media screen and (max-width: $screen-sm - 1) {
     padding-bottom: 25px;
     font-size: 23px;
   }
