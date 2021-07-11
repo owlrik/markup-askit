@@ -91,11 +91,11 @@
           <div class="start-home__btn-wrap">
             <a class="btn start-home__btn" href="#">Create an event</a>
 
-            <form class="form form--join start-home__form" action="#">
+            <form class="form form--join start-home__form" action="#" method="post">
               <div class="form__group">
                 <label class="sr-only" for="join-code">Your code</label>
                 <div class="form__group-fields">
-                  <input class="field field--text" type="text" name="join-code" id="join-code" placeholder="type code" maxlength="6" required>
+                  <input class="field field--text" type="text" name="join-code" id="join-code" placeholder="type code" minlength="6" maxlength="6" required>
                 </div>
               </div>
 
@@ -557,7 +557,7 @@
         <div class="page-footer__subscribe">
           <p class="page-footer__subscribe-text">Subscribe to our newsletter</p>
 
-          <form class="form form--subscribe" method="post" action="#">
+          <form class="form form--subscribe" action="#" method="post">
             <div class="form__group">
               <label class="sr-only" for="email">Your email</label>
               <div class="form__group-fields">
@@ -587,7 +587,7 @@
       <div class="modal__content">
         <h3 class="modal__title">Log in</h3>
 
-        <form class="form form--login modal__form" method="post" action="#">
+        <form class="form form--login modal__form" action="#" method="post">
           <div class="form__group">
             <label class="sr-only" for="login-email">Your email</label>
             <div class="form__group-fields">
@@ -598,7 +598,7 @@
           <div class="form__group">
             <label class="sr-only" for="login-password">Your password</label>
             <div class="form__group-fields">
-              <input class="field field--text" type="password" name="password" id="login-password" placeholder="Password" required>
+              <input class="field field--text" type="password" name="password" id="login-password" placeholder="Password" minlength="6" required>
             </div>
           </div>
 
@@ -619,7 +619,7 @@
       <div class="modal__content">
         <h3 class="modal__title">Register</h3>
 
-        <form class="form form--register" method="post" action="#">
+        <form class="form form--register" action="#" method="post">
           <div class="form__group">
             <label class="sr-only" for="register-name">Your name</label>
             <div class="form__group-fields">
@@ -637,7 +637,7 @@
           <div class="form__group">
             <label class="sr-only" for="register-password">Your password</label>
             <div class="form__group-fields">
-              <input class="field field--text" type="password" name="password" id="register-password" placeholder="Password" required>
+              <input class="field field--text" type="password" name="password" id="register-password" placeholder="Password" minlength="6" required>
             </div>
           </div>
 
