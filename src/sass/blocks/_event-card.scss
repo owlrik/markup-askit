@@ -98,6 +98,11 @@
   @media screen and (max-width: $screen-xxs--425 - 1) {
     font-size: 20px;
   }
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .event-card--big .event-card__head {

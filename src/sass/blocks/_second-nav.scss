@@ -35,4 +35,9 @@
   @media screen and (max-width: $screen-xs--550 - 1) {
     font-size: 16px;
   }
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
 }

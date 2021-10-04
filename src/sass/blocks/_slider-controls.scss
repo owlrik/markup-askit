@@ -12,3 +12,10 @@
     transform: rotate(180deg);
   }
 }
+
+.slider-controls__btn:not(.swiper-button-disabled) {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+}
