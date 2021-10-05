@@ -1,6 +1,19 @@
 .partners {
   color: $color-text--invert;
-  background: #5b5a5a url("../img/bg/bg-partners.jpg") center top/cover no-repeat;
+  /* stylelint-disable */
+  background:
+    #5b5a5a
+    image-set(url("../img/bg/bg-partners-desktop@2x.jpg") 2x, url("../img/bg/bg-partners-desktop@1x.jpg") 1x)
+    center top/cover no-repeat;
+  /* stylelint-enable */
+
+  @media screen and (max-width: $screen-xxl - 1) {
+    background-image: image-set(url("../img/bg/bg-partners-tablet@2x.jpg") 2x, url("../img/bg/bg-partners-tablet@1x.jpg") 1x);
+  }
+
+  @media screen and (max-width: $screen-sm - 1) {
+    background-image: image-set(url("../img/bg/bg-partners-mobile@2x.jpg") 2x, url("../img/bg/bg-partners-mobile@1x.jpg") 1x);
+  }
 }
 
 .partners__inner {

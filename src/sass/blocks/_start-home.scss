@@ -2,9 +2,11 @@
   padding-top: 167px;
   color: $color-text--invert;
   background-color: #163155;
+  /* stylelint-disable */
   background-image:
-    url("../img/bg/iphone-6-desktop@1x.png"),
-    url("../img/bg/intro-1-desktop@1x.jpg");
+    image-set(url("../img/bg/iphone-6-desktop@2x.png") 2x, url("../img/bg/iphone-6-desktop@1x.png") 1x),
+    image-set(url("../img/bg/intro-1-desktop@2x.jpg") 2x, url("../img/bg/intro-1-desktop@1x.jpg") 1x);
+  /* stylelint-enable */
   background-position:
     calc(50% + 520px) calc(100% + 195px),
     center top;
@@ -17,11 +19,17 @@
 
   @media screen and (max-width: $screen-xxl - 1) {
     padding-top: 136px;
-    background: url("../img/bg/intro-1-tablet@1x.jpg") center top/cover no-repeat;
+    background:
+      image-set(url("../img/bg/intro-1-tablet@2x.jpg") 2x, url("../img/bg/intro-1-tablet@1x.jpg") 1x)
+      center top/cover no-repeat;
   }
 
   @media screen and (max-width: $screen-md - 1) {
     padding-top: 0;
+  }
+
+  @media screen and (max-width: $screen-sm - 1) {
+    background-image: image-set(url("../img/bg/intro-1-mobile@2x.jpg") 2x, url("../img/bg/intro-1-mobile@1x.jpg") 1x);
   }
 }
 
