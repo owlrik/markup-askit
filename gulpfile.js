@@ -89,7 +89,9 @@ const optimizeImages = () => {
 };
 
 const createWebp = () => {
-  return gulp.src(`${paths.src.images.all}**/*.{jpg,png}`)
+  let images = getImagesToConvert();
+
+  return gulp.src(images)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(paths.src.images.all));
 };
@@ -161,3 +163,20 @@ exports.start = start;
 exports.webp = createWebp;
 exports.imagemin = optimizeImages;
 exports.deploy = deploy;
+
+// Helpers
+//---------------------------------
+
+// По умолчанию в обработку берутся изображения во всех папках src/img/
+// Если нужно исключить какие-то папки, указываем их в опциях команды,
+// например: 'npm run webp -- --bg --slides' - webp создаются везде, кроме src/img/bg/ и src/img/slides/
+const getImagesToConvert = () => {
+  let images = [`${paths.src.images.all}**/*.{jpg,png}`];
+  let excludedPaths = process.argv.slice(3, process.argv.length);
+
+  excludedPaths.forEach((path) => {
+    images.push(`!${paths.src.images.all}${path.slice(2) + '/**/*.{jpg,png}'}`);
+  });
+
+  return images;
+}
