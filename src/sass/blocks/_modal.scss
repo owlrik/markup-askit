@@ -49,6 +49,12 @@
     padding: 6px 20px;
     font-size: 23px;
   }
+
+  &:focus,
+  &:hover {
+    color: $color-text;
+    background-color: $color-white;
+  }
 }
 
 .modal .form__submit {

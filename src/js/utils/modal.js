@@ -1,9 +1,17 @@
+import {disableBodyScroll, enableBodyScroll} from './../vendor';
+
 const openModal = (modal) => {
   modal.classList.add('modal--active');
+
+  disableBodyScroll(modal, {
+    reserveScrollBarGap: true
+  });
 };
 
 const closeModal = (modal) => {
   modal.classList.remove('modal--active');
+
+  enableBodyScroll(modal);
 };
 
 const onEscPress = (evt, modal) => {
