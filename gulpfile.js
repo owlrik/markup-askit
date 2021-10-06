@@ -108,7 +108,7 @@ const copyFonts = () => {
 
 const copyMisc = () => {
   return gulp.src([
-    'src/favicon/**',
+    'src/*',
     'src/data/**',
     'src/file/**',
     'src/video/**',
@@ -132,6 +132,8 @@ const syncServer = () => {
   gulp.watch([`${paths.src.scripts}**/*.{js,json}`], gulp.series(buildScripts, refresh));
   gulp.watch([`${paths.src.images.all}**/*.{jpg,jpeg,png,webp,gif,svg}`, `!${paths.src.images.spriteSvg}*.svg`], gulp.series(optimizeSvg, copyImages, refresh));
   gulp.watch([`${paths.src.images.spriteSvg}*.svg`], gulp.series(optimizeSvg, buildSvgSprite, refresh));
+
+  gulp.watch([`${paths.src.root}*.*`], gulp.series(copyMisc, refresh));
 };
 
 const deploy = (done) => {
