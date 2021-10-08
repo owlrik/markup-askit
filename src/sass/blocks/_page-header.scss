@@ -13,7 +13,7 @@
   }
 
   @media screen and (max-width: $screen-md - 1) {
-    position: relative;
+    position: fixed;
     height: 100px;
     min-height: auto;
   }
