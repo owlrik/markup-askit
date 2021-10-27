@@ -32,7 +32,16 @@ const initPartnersSlider = () => {
 
     checkBreakpoint();
 
-    partnersBreakpoint.addEventListener('change', checkBreakpoint);
+    try {
+      partnersBreakpoint.addEventListener('change', checkBreakpoint);
+    } catch (e1) {
+      try {
+        // Safari < 15
+        partnersBreakpoint.addListener(checkBreakpoint);
+      } catch (e2) {
+        console.error(e2);
+      }
+    }
   }
 };
 

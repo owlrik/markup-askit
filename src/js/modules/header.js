@@ -54,7 +54,16 @@ const toggleMenuHighlighter = () => {
 
   checkBreakpoint();
 
-  breakpointMd.addEventListener('change', checkBreakpoint);
+  try {
+    breakpointMd.addEventListener('change', checkBreakpoint);
+  } catch (e1) {
+    try {
+      // Safari < 15
+      breakpointMd.addListener(checkBreakpoint);
+    } catch (e2) {
+      console.error(e2);
+    }
+  }
 };
 
 const openMenu = () => {
@@ -81,7 +90,16 @@ const toggleMenu = () => {
     });
   }
 
-  breakpointMd.addEventListener('change', closeMenu);
+  try {
+    breakpointMd.addEventListener('change', closeMenu);
+  } catch (e1) {
+    try {
+      // Safari < 15
+      breakpointMd.addListener(closeMenu);
+    } catch (e2) {
+      console.error(e2);
+    }
+  }
 };
 
 export {toggleMenu, toggleMenuHighlighter};
