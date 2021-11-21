@@ -1,7 +1,7 @@
 const header = document.querySelector('.page-header');
 const menuToggle = header.querySelector('.page-header__toggle');
 const headerNavigation = header.querySelector('.main-nav');
-const navLinks = headerNavigation.querySelectorAll('.main-nav__list--main .main-nav__link[href^="#"]');
+const navLinks = headerNavigation.querySelectorAll('.main-nav__list--main .main-nav__link[href^="#"]:not(.main-nav__link[href$="#"])');
 const startSection = document.querySelector('.start-home');
 
 const breakpointMd = window.matchMedia('(max-width: 1023px)');
