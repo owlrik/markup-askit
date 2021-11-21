@@ -1,13 +1,14 @@
 const header = document.querySelector('.page-header');
 const menuToggle = header.querySelector('.page-header__toggle');
 const headerNavigation = header.querySelector('.main-nav');
-const navLinks = headerNavigation.querySelectorAll('.main-nav__list--main .main-nav__link[href^="#"]:not(.main-nav__link[href$="#"])');
+const navLinks = headerNavigation.querySelectorAll('.main-nav__list--main .main-nav__link');
+const sectionLinks = headerNavigation.querySelectorAll('.main-nav__list--main .main-nav__link[href^="#"]:not(.main-nav__link[href$="#"])');
 const startSection = document.querySelector('.start-home');
 
 const breakpointMd = window.matchMedia('(max-width: 1023px)');
 
 const clearMenu = () => {
-  navLinks.forEach(menuLink => {
+  sectionLinks.forEach(menuLink => {
     menuLink.classList.remove('main-nav__link--active');
   });
 };
@@ -19,7 +20,7 @@ const highlightActiveMenuLink = () => {
     header.classList.add('page-header--fixed');
     let currentLink = null;
 
-    navLinks.forEach((menuLink) => {
+    sectionLinks.forEach((menuLink) => {
       const linkedSection = document.querySelector('section#' + menuLink.href.split('#').slice(-1).pop());
 
       if (linkedSection) {
@@ -90,6 +91,16 @@ const toggleMenu = () => {
         openMenu();
       }
     });
+
+    if (navLinks) {
+      navLinks.forEach((menulink) => {
+        menulink.addEventListener('click', () => {
+          if (menuToggle.ariaPressed === 'true') {
+            closeMenu();
+          }
+        });
+      });
+    }
   }
 
   try {
