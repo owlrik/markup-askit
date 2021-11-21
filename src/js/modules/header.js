@@ -13,6 +13,8 @@ const clearMenu = () => {
 };
 
 const highlightActiveMenuLink = () => {
+  const TRIGGER_OFFSET = 20;
+
   if ((window.pageYOffset + header.clientHeight) >= startSection.clientHeight) {
     header.classList.add('page-header--fixed');
     let currentLink = null;
@@ -24,14 +26,14 @@ const highlightActiveMenuLink = () => {
         const linkedSectionOffset = linkedSection.offsetTop;
         menuLink.classList.remove('main-nav__link--active');
 
-        if (window.pageYOffset >= linkedSectionOffset) {
+        if (window.pageYOffset >= linkedSectionOffset - TRIGGER_OFFSET) {
           currentLink = menuLink;
         }
       }
     });
 
     if (currentLink) {
-        currentLink.classList.add('main-nav__link--active');
+      currentLink.classList.add('main-nav__link--active');
     }
   } else {
     if (header.classList.contains('page-header--fixed')) {
