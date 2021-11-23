@@ -1,3 +1,9 @@
+.info {
+  @media screen and (max-width: $screen-md - 1) {
+    scroll-margin-top: 35px;
+  }
+}
+
 .info__inner {
   width: 100%;
   max-width: 1630px;
